@@ -4,11 +4,11 @@
 
 outline不占据空间
 
-<img src="F:\前端\笔记\截图、\outline.PNG" style="zoom:25%;" />
+<img src="截图、\outline.PNG" style="zoom:25%;" />
 
 ## 2.css属性-box-shadow
 
-<img src="F:\前端\笔记\截图、\box-shadow.PNG" style="zoom:25%;" />
+<img src="截图、\box-shadow.PNG" style="zoom:25%;" />
 
 ## 3、css属性-box-sizing
 
@@ -147,7 +147,7 @@ margin：auto; 水平居中原理：浏览器会选择一个合适的margin来�
 
 ### 8.background简写
 
-![](F:\前端\笔记\截图、\background简写属性.PNG)
+![](截图、\background简写属性.PNG)
 
 
 

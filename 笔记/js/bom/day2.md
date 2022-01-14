@@ -270,19 +270,19 @@ element.属性
 
 ## 2.1为什么使用节点操作
 
-![](F:\前端\笔记\js\bom\img\为什么学习节点操作.png)
+![](img\为什么学习节点操作.png)
 
 ## 2.2节点概述
 
-![](F:\前端\笔记\js\bom\img\节点概述.png)
+![](img\节点概述.png)
 
 ## 2.3节点层次
 
-![](F:\前端\笔记\js\bom\img\节点层次.png)
+![](img\节点层次.png)
 
 ### 2.3.1父子节点
 
-![](F:\前端\笔记\js\bom\img\子节点.png)
+![](img\子节点.png)
 
 ```html
     // 1.父节点 parentNode
@@ -315,7 +315,7 @@ element.属性
 
 ### 2.3.2兄弟节点
 
-![](F:\前端\笔记\js\bom\img\兄弟节点.png)
+![](img\兄弟节点.png)
 
 ```html
   <div>div元素</div>
@@ -422,7 +422,7 @@ element.属性
 
 ### 2.3.5复制节点
 
-![](F:\前端\笔记\js\bom\img\复制节点.jpg)
+![](img\复制节点.jpg)
 
 ```html
   <ul>
@@ -544,17 +544,17 @@ element.属性
 
 ### 2.5.1三种动态创建元素区别
 
-![](F:\前端\笔记\js\bom\img\三种创建动态元素区别.jpg)
+![](img\三种创建动态元素区别.jpg)
 
 # 三、DOM总结
 
 ## 1、dom核心重点
 
-![](F:\前端\笔记\js\bom\img\dom核心重点1.jpg)
+![](img\dom核心重点1.jpg)
 
 ## 2、创建
 
-![](F:\前端\笔记\js\bom\img\dom核心重点.jpg)
+![](img\dom核心重点.jpg)
 
 ## 3.增
 
@@ -568,17 +568,17 @@ element.属性
 
 ## 5.改
 
-![](F:\前端\笔记\js\bom\img\改.jpg)
+![](img\改.jpg)
 
 ## 6.查
 
-![](F:\前端\笔记\js\bom\img\查.jpg)
+![](img\查.jpg)
 
 ## 7.属性操作
 
-![](F:\前端\笔记\js\bom\img\属性操作.jpg)
+![](img\属性操作.jpg)
 
 ## 8.事件操作
 
-![](F:\前端\笔记\js\bom\img\事件操作.jpg)
+![](img\事件操作.jpg)
 

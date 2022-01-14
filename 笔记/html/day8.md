@@ -6,9 +6,9 @@ display常用属性值：block（将行内级元素变为块级元素）、inlin
 
 还有以下取值
 
-<img src="F:\前端\笔记\截图、\display的其他属性.PNG" style="zoom:25%;" />
+<img src="截图、\display的其他属性.PNG" style="zoom:25%;" />
 
-<img src="F:\前端\笔记\截图、\inline-block.PNG" style="zoom:25%;" />
+<img src="截图、\inline-block.PNG" style="zoom:25%;" />
 
 ### display+hover练习
 
@@ -146,15 +146,15 @@ display常用属性值：block（将行内级元素变为块级元素）、inlin
 
 ### 2.3、元素之间的空格
 
-<img src="F:\前端\笔记\截图、\元素之间的空格.PNG" style="zoom:25%;" />
+<img src="截图、\元素之间的空格.PNG" style="zoom:25%;" />
 
 ### 2.4注意点
 
-<img src="F:\前端\笔记\截图、\css元素注意点.PNG" style="zoom:25%;" />
+<img src="截图、\css元素注意点.PNG" style="zoom:25%;" />
 
 # 二、盒子模型
 
-<img src="F:\前端\笔记\截图、\盒子模型示意图.PNG" style="zoom:25%;" />
+<img src="截图、\盒子模型示意图.PNG" style="zoom:25%;" />
 
 #### 1、内容（content）
 
@@ -171,7 +171,7 @@ padding属性缩写时按照：上、右、下、左的顺序。
 
 word-break:让汉字换行
 
-<img src="F:\前端\笔记\截图、\padding.PNG" style="zoom:25%;" />
+<img src="截图、\padding.PNG" style="zoom:25%;" />
 
 #### 3、外边距（margin）
 
@@ -187,13 +187,13 @@ margin的父子传递：如果块级元素的顶部线和父元素的顶部线�
 
 如何触发：浮动可以触发，设置一个元素的overflow为非visible
 
-<img src="F:\前端\笔记\截图、\上下margin服务器.PNG" style="zoom:25%;" />
+<img src="截图、\上下margin服务器.PNG" style="zoom:25%;" />
 
 ##### 如何解决折叠（collapse）
 
 注意：外边距折叠只针对上下，不针对左右。
 
-<img src="F:\前端\笔记\截图、\上下margin折叠.PNG" style="zoom:25%;" />
+<img src="截图、\上下margin折叠.PNG" style="zoom:25%;" />
 
 ### 4、边框（border）
 

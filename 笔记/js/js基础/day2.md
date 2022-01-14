@@ -1,12 +1,12 @@
 # 一、运算符
 
-<img src="F:\前端\笔记\js\运算符介绍.PNG" style="zoom:25%;" />
+<img src="img\运算符介绍.PNG" style="zoom:25%;" />
 
 ## 1、算术运算符
 
 ##### 特别要注意自增自减前置后置的区别
 
-<img src="F:\前端\笔记\js\算术运算符.PNG" style="zoom:25%;" />
+<img src="img\算术运算符.PNG" style="zoom:25%;" />
 
 ```js
         // 1.定义一些变量
@@ -50,11 +50,11 @@
 
 ### 2、赋值运算符
 
-<img src="F:\前端\笔记\js\赋值运算符.PNG" style="zoom:25%;" />
+<img src="img\赋值运算符.PNG" style="zoom:25%;" />
 
 ### 3、关系（比较）运算符
 
-<img src="F:\前端\笔记\js\关系运算符.PNG" style="zoom:25%;" />
+<img src="img\关系运算符.PNG" style="zoom:25%;" />
 
 * 全等和全不等会做一个隐式转化，将两个被比较的值转换为相同的类型，下例子中，num2被转换为数字型
 
@@ -69,7 +69,7 @@ console.log(num1 !== num2);// true
 
 * 注意:都转换为数字类型再比较
 
-![](F:\前端\笔记\js\关系运算符隐性转换.PNG)
+![](img\关系运算符隐性转换.PNG)
 
 ```js
 var flag1 = true;
@@ -82,7 +82,7 @@ console.log(flag1 == flag2);//false
 
 ### 4、逻辑运算符
 
-<img src="F:\前端\笔记\js\逻辑运算符.PNG" style="zoom:25%;" />
+<img src="img\逻辑运算符.PNG" style="zoom:25%;" />
 
 #### 4.1、与
 
@@ -122,7 +122,7 @@ else{
 
 # 二、程序的执行语句
 
-<img src="F:\前端\笔记\js\分支结构.PNG" style="zoom:25%;" />
+<img src="img\分支结构.PNG" style="zoom:25%;" />
 
 ### 1、顺序
 
@@ -177,11 +177,11 @@ else {
 }  00
 ```
 
-<img src="F:\前端\笔记\js\三元运算符.PNG" alt="三元运算符" style="zoom:25%;" />
+<img src="img\三元运算符.PNG" alt="三元运算符" style="zoom:25%;" />
 
 #### 2.4、Switch语句
 
-<img src="F:\前端\笔记\js\Switch分支语句.PNG" style="zoom:25%;" />
+<img src="img\Switch分支语句.PNG" style="zoom:25%;" />
 
 ```js
         var holiday_name = prompt("请输入今天的节日");
@@ -266,11 +266,11 @@ div{
 
 #### 3.3、循环跳转
 
-<img src="F:\前端\笔记\js\do-while.PNG" style="zoom:25%;" />
+<img src="img\do-while.PNG" style="zoom:25%;" />
 
  
 
 #### 3.4、断点调试（debugger）
 
-<img src="F:\前端\笔记\js\断点调试.PNG" style="zoom:25%;" />
+<img src="img\断点调试.PNG" style="zoom:25%;" />
 

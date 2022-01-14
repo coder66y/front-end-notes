@@ -1,6 +1,6 @@
 # 一、内置对象
 
-<img src="F:\前端\笔记\js\内置对象.png" style="zoom:25%;" />
+<img src="img\内置对象.png" style="zoom:25%;" />
 
 ## 1.math对象
 
@@ -73,7 +73,7 @@ https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects
 
 ## 2.date对象
 
-<img src="F:\前端\笔记\js\日期对象方法使用.png" style="zoom:25%;" />
+<img src="img\日期对象方法使用.png" style="zoom:25%;" />
 
 日期对象 是一个构造函数，所以必须使用new来调用创建的日期对象
 
@@ -117,9 +117,9 @@ console.log("今天是：", now.getFullYear() + "年" + now.getMonth() + 1 + "�
 
 ### 2.2时间戳
 
-<img src="F:\前端\笔记\js\获得时间戳的四种方法.png" style="zoom:25%;" />
+<img src="img\获得时间戳的四种方法.png" style="zoom:25%;" />
 
-<img src="F:\前端\笔记\js\日期对象案例.png" style="zoom:25%;" />
+<img src="img\日期对象案例.png" style="zoom:25%;" />
 
 ```js
     function countDown(time) {
@@ -178,7 +178,7 @@ console.log("今天是：", now.getFullYear() + "年" + now.getMonth() + 1 + "�
 
 #### 3.3添加删除数组元素的方法
 
-<img src="F:\前端\笔记\js\数组对象删除和添加.png" style="zoom:25%;" />
+<img src="img\数组对象删除和添加.png" style="zoom:25%;" />
 
 ```js
     // 添加数组对象的方法
@@ -262,7 +262,7 @@ console.log("今天是：", now.getFullYear() + "年" + now.getMonth() + 1 + "�
 
 ## 4.基本包装类型
 
-<img src="F:\前端\笔记\js\基本包装类型.jpg" style="zoom:;" />
+<img src="img\基本包装类型.jpg" style="zoom:;" />
 
 ```js
     var str = "andy";

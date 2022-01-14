@@ -6,9 +6,9 @@
 
 在 Web 开发中，API 通常是开发者能用在应用（app）中的一系列代码特性（如 [方法](https://developer.mozilla.org/zh-CN/docs/Glossary/Method)、[属性 (en-US)](https://developer.mozilla.org/en-US/docs/Glossary/property)、事件 和 [URL](https://developer.mozilla.org/zh-CN/docs/Glossary/URL)），这些特性被用于与用户的 web 浏览器中的组件、用户电脑上的其他软硬件或者第三方软件与服务交互。
 
-![](F:\前端\笔记\js\bom\img\API.png)
+![](img\API.png)
 
-![](F:\前端\笔记\js\bom\img\Web API.png)
+![](img\Web API.png)
 
 ## 2.总结
 
@@ -25,11 +25,11 @@
 
 w3c已经定义了一些列的DOM接口，通过这些接口可以改变网页内容及样式；
 
-![](F:\前端\笔记\js\bom\img\DOM.png)
+![](img\DOM.png)
 
 ## 2.获取元素
 
-![](F:\前端\笔记\js\bom\img\如何获取页面内容.png)
+![](img\如何获取页面内容.png)
 
 ### 2.1根据id获取
 
@@ -190,7 +190,7 @@ javascript让我们有能力去创建动态页面，而事件是可以被JavaScr
 
 2.注册事件（绑定事件）
 
-![](F:\前端\笔记\js\bom\img\常见鼠标事件.png)
+![](img\常见鼠标事件.png)
 
 3.添加事件处理程序（采用函数赋值的方法）
 
@@ -211,7 +211,7 @@ javascript让我们有能力去创建动态页面，而事件是可以被JavaScr
 
 JavaScript的DOM操作可以改变网页的内容，结构和样式，我们可以利用DOM操作元素来改变里面的内容属性
 
-![](F:\前端\笔记\js\bom\img\如何获取页面内容.png)
+![](img\如何获取页面内容.png)
 
 ### 4.1改变元素内容
 
@@ -259,7 +259,7 @@ JavaScript的DOM操作可以改变网页的内容，结构和样式，我们可�
 
 * innerText()与innerHTML()的区别
 
-![](F:\前端\笔记\js\bom\img\改变元素内容.png)
+![](img\改变元素内容.png)
 
 ### 4.2修改元素属性
 

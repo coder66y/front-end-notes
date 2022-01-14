@@ -287,7 +287,7 @@ fieldset的标题
 
   表单综合练习效果如下：
 
-![](F:\前端\笔记\表单综合演练.PNG)
+![](../ajax/img/表单综合演练.PNG)
 
 ```html
 <!DOCTYPE html>
@@ -434,15 +434,15 @@ fieldset的标题
 
 由于浏览器和服务器对URL长度有限制，因此在URL后面附带的参数是有限制的，通常不能超过1kb 
 
-<img src="F:\前端\笔记\截图、\get请求.PNG" style="zoom:25%;" />
+<img src="截图、\get请求.PNG" style="zoom:25%;" />
 
 #### 10.2、post
 
-<img src="F:\前端\笔记\截图、\post请求.PNG" alt="post请求" style="zoom:25%;" />
+<img src="截图、\post请求.PNG" alt="post请求" style="zoom:25%;" />
 
 ### 11、form常用属性
 
-<img src="F:\前端\笔记\截图、\form常用属性(1).PNG" style="zoom:25%;" />
+![](../ajax/img/form常用属性(1).PNG)
 
 ## 五、css元素类型
 
@@ -466,7 +466,7 @@ fieldset的标题
 
 比如：div/p/h1-h6/ul等
 
-<img src="F:\前端\笔记\截图、\元素的分类总结.PNG" style="zoom:25%;" />
+<img src="截图、\元素的分类总结.PNG" style="zoom:25%;" />
 
 
 

@@ -34,7 +34,7 @@
 
 默认情况下不存在层叠情况
 
-<img src="F:\前端\笔记\截图、\标准流.PNG" style="zoom:25%;" />
+<img src="截图、\标准流.PNG" style="zoom:25%;" />
 
 可以通过margin、padding来进行位置调整，但是会影响其他元素位置
 
@@ -51,7 +51,7 @@
 
 * absolute：绝对定位
 
-  <img src="F:\前端\笔记\截图、\绝对定位技巧.PNG" style="zoom:25%;" />
+  <img src="截图、\绝对定位技巧.PNG" style="zoom:25%;" />
 
   * 元素脱离normal flow
 
@@ -150,7 +150,7 @@
 
     效果图如下：利用绝对定位让下面的六个链接实现放在图片底部的效果，并且鼠标悬浮下面六个连接上可以变红
 
-    ![效果图](F:\前端\笔记\截图、\考拉商品展示.PNG)
+    ![效果图](截图、\考拉商品展示.PNG)
 
 * 二维码案例
 
@@ -244,7 +244,7 @@
 
 效果如下：点击"手机考拉"时，下面的二维码会弹出
 
-![](F:\前端\笔记\截图、\考拉二维码.PNG)
+![](截图、\考拉二维码.PNG)
 
 * fixed：固定定位（相对于浏览器视口，可以脱离标准流）
 
@@ -414,10 +414,11 @@
 
 ### 3.position总结
 
-<img src="F:\前端\笔记\截图、\position总结.PNG" style="zoom:25%;" />
+<img src="截图、\position总结.PNG" style="zoom:25%;" />
 
 # 三、元素的层叠
 
-<img src="F:\前端\笔记\截图、\元素的层叠.PNG" style="zoom:25%;" />
+<img src="截图、\元素的层叠.PNG" style="zoom:25%;" />
 
-<img src="F:\前端\笔记\截图、\z-index.PNG" style="zoom:25%;" />
+<img src="截图、\z-index.PNG" style="zoom:25%;" />
+

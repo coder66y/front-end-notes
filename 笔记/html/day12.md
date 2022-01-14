@@ -41,7 +41,7 @@
 
 * ##### transform-origin
 
-  <img src="F:\前端\笔记\截图、\transform-origin.PNG" style="zoom:25%;" />
+  <img src="截图、\transform-origin.PNG" style="zoom:25%;" />
 
 - ##### translate(x, y)（只有一个值时，是x轴上的平移）
 
@@ -105,17 +105,17 @@
 
 
 
-![](F:\前端\笔记\截图、\transition.PNG)
+![](截图、\transition.PNG)
 
-<img src="F:\前端\笔记\截图、\过度动画.PNG" style="zoom:25%;" />
+<img src="截图、\过度动画.PNG" style="zoom:25%;" />
 
 # 三、vertical align
 
-<img src="F:\前端\笔记\截图、\vertical-align 行高.PNG" style="zoom:25%;" />
+<img src="截图、\vertical-align 行高.PNG" style="zoom:25%;" />
 
-<img src="F:\前端\笔记\截图、\vertical-align.PNG" alt="vertical-align" style="zoom:25%;" />
+<img src="截图、\vertical-align.PNG" alt="vertical-align" style="zoom:25%;" />
 
-<img src="F:\前端\笔记\截图、\行高.PNG" alt="行高" style="zoom:25%;" />
+<img src="截图、\行高.PNG" alt="行高" style="zoom:25%;" />
 
 # 四、将考拉项目搭建起来
 

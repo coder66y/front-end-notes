@@ -38,11 +38,11 @@
 
 * 浮动元素之间不可以层叠
 
-  <img src="F:\前端\笔记\截图、\浮动规则五.PNG" style="zoom:25%;" />
+  <img src="截图、\浮动规则五.PNG" style="zoom:25%;" />
 
 ## 6、浮动规则六
 
-<img src="F:\前端\笔记\截图、\浮动规则六.PNG" style="zoom:25%;" />
+<img src="截图、\浮动规则六.PNG" style="zoom:25%;" />
 
 ## 7、优点
 

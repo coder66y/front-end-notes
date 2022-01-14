@@ -193,13 +193,13 @@ none：没有任何影响
 
   height:元素的整体高度（比如div元素的高度）
 
-  <img src="F:\前端\笔记\line-light.PNG" style="zoom:25%;" />
+  <img src="line-light.PNG" style="zoom:25%;" />
 
 * ### font
 
   是一个缩写属性
 
-  <img src="F:\前端\笔记\font缩写.PNG" style="zoom: 25%;" />
+  <img src="font缩写.PNG" style="zoom: 25%;" />
 
 ## 七、颜色空间
 

@@ -20,7 +20,7 @@
   * 接近自然语言，更符合人类的思维方式
   * JavaScript就是这样的一门语言
 
-<img src="F:\前端\笔记\js\ECMAscript与JavaScript关系.PNG" style="zoom:25%;" />
+![](day1.assets/js历史.PNG)
 
 # 二、JS的历史
 
@@ -28,7 +28,7 @@
 
 java-->跨平台-->虚拟机-->linux/windows/mac
 
-<img src="F:\前端\笔记\js\js历史.PNG" style="zoom:25%;" />
+![](../../ajax/img/js历史.PNG)
 
 
 
@@ -36,7 +36,7 @@ java-->跨平台-->虚拟机-->linux/windows/mac
 
 * 解释型语言
 
-  <img src="F:\前端\笔记\js\js介绍.PNG" style="zoom:25%;" />
+  <img src="img\js介绍.PNG" style="zoom:25%;" />
 
 * 静态类型的语言
 
@@ -73,7 +73,7 @@ java-->跨平台-->虚拟机-->linux/windows/mac
   * 加载顺序
   * javascript严格区分大小写
 
-<img src="F:\前端\笔记\js\注意事项.PNG" style="zoom:25%;" />
+<img src="img\注意事项.PNG" style="zoom:25%;" />
 
 # 五、JS注释使用
 
@@ -153,15 +153,15 @@ var num1 = 20, num2 = 30, num3 = 40;
 * 赋值符号两边都加上空格
 * 一个语句结束后加上分号（不加也不报错）
 
-<img src="F:\前端\笔记\js\命名.PNG" style="zoom: 50%;" />
+<img src="img\命名.PNG" style="zoom: 50%;" />
 
 ### 4.3、保留字
 
-<img src="F:\前端\笔记\js\保留字.PNG" style="zoom: 80%;" />
+<img src="img\保留字.PNG" style="zoom: 80%;" />
 
 ### 4.4、关键字
 
-<img src="F:\前端\笔记\js\关键字.PNG" alt="关键字" style="zoom:80%;" />
+<img src="img\关键字.PNG" alt="关键字" style="zoom:80%;" />
 
 ### 4.5、变量交换
 

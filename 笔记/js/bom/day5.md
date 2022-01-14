@@ -2,15 +2,15 @@
 
 ## 1、offset概述
 
-![](F:\前端\笔记\js\bom\img\offset概述.png)
+![](img\offset概述.png)
 
 ## 2.offset与style的区别
 
-![offset与style的区别](F:\前端\笔记\js\bom\img\offset与style的区别.png)
+![offset与style的区别](img\offset与style的区别.png)
 
 ## 3.案例---京东放大镜
 
-![](F:\前端\笔记\js\bom\img\放大镜效果.png)
+![](img\放大镜效果.png)
 
 ```html
 <!DOCTYPE html>
@@ -144,7 +144,7 @@
 
 # 二、元素可视区client系列
 
-![](F:\前端\笔记\js\bom\img\client系列.png)
+![](img\client系列.png)
 
 ## 2.client与offset的区别
 
@@ -183,7 +183,7 @@
 
 ## 3.flexible.js分析
 
-![](F:\前端\笔记\js\bom\img\淘宝flexible.js分析.png)
+![](img\淘宝flexible.js分析.png)
 
 # 三、立即执行函数
 
@@ -224,11 +224,11 @@
 
 # 四、元素滚动scroll系列
 
-![](F:\前端\笔记\js\bom\img\scroll.png)
+![](img\scroll.png)
 
-![scroll2](F:\前端\笔记\js\bom\img\scroll2.png)
+![scroll2](img\scroll2.png)
 
-![](F:\前端\笔记\js\bom\img\scroll3.png)
+![](img\scroll3.png)
 
 ```html
 <!DOCTYPE html>
@@ -279,13 +279,13 @@
 
 # 五、三大系列总结
 
-![](F:\前端\笔记\js\bom\img\三大系列主要用法.png)
+![](img\三大系列主要用法.png)
 
-![三大系列总结](F:\前端\笔记\js\bom\img\三大系列总结.png)
+![三大系列总结](img\三大系列总结.png)
 
 # 六、mouse over 和mouseenter区别
 
-![](F:\前端\笔记\js\bom\img\mouseenter和mouseover.png)
+![](img\mouseenter和mouseover.png)
 
 ```html
 <!DOCTYPE html>

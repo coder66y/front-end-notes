@@ -358,6 +358,5 @@ git commit -a -m "提交的消息"
 
 ### 7.12移除文件
 
-* 从git仓库和工作区中同时移除  git rm -f 文件名
+* 从git仓库和工作区中同时移除  git rm -f  文件名
 * 从git仓库中移除  但在工作区中保留  git rm --cached 文件名
-* 

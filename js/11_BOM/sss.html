@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="../animate.js"></script>
+  <style>
+    div{
+      width: 200px;
+      height: 100px;
+
+      background-color: red;
+
+      position: absolute;
+      top: 50px;
+      left: 0px;
+    }
+  </style>
+</head>
+<body>
+  <button>启动</button>
+  <div>
+    <div>无所谓</div>
+  </div>
+  <script>
+
+    let div = document.querySelector("div");
+    let btn = document.querySelector("button");
+    btn.addEventListener("click", function() {
+      animate(div, 500, function() {
+        div.style.backgroundColor = "blue";
+      })
+    })
+
+    div.addEventListener("click", function () {
+      div.children[0].style.color = "#fff";
+    })
+  </script>
+</body>
+</html>

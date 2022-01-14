@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 取消默认样式 */
+        ul{
+            list-style:none;
+            padding:0;
+            margin: 0;
+        }
+
+        a{
+            text-decoration: none;
+            color:black;
+        }
+
+        /* 设置整体样式 */
+        .email{
+            border:2px solid #999;
+            width:100px;
+            text-align:center;
+        }
+        /* 隐藏邮箱列表 */
+        .email:hover ul{
+            display:block;
+         }
+
+        /* 设置局部样式-header */
+        .header{
+            background-color: #999;
+            color:#fff;
+        }
+
+       /* 设置局部样式-邮箱列表 */
+       .email ul{
+           display:none;
+        }
+        .email ul li a:hover{
+            background-color:skyblue;
+        }
+        .email ul li a{
+            display:block;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="email">
+        <div class="header">邮箱</div>
+        <ul>
+            <li><a href="">QQ邮箱</a></li>
+            <li><a href="">163邮箱</a></li>
+            <li><a href="">139邮箱</a></li>
+        </ul>
+    </div>
+</body>
+</html>

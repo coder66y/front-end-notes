@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //查看数据的类型：typeof 操作符
+        console.log(typeof "我是66呀!");//string       
+        console.log(typeof 123456);//number
+
+        // typeof另一种写法
+        typeof("coderwhy");
+        console.log(typeof("coderwhy"));//string
+
+        // 1.数字类型的基本使用
+        var age = 20;
+        var height = 1.88;
+        var tel = 110;
+        console.log(typeof age);
+        console.log(typeof height);
+        console.log(typeof tel);
+
+        // 2.进制 #ff ff ff
+        var num1 = 100;
+        var num2 = 0x10;//十六进制
+        var num3 = 0o10;//八进制
+        var num4 = 0b10;//二进制
+        console.log(num1);
+        console.log(num2);
+        console.log(num3);
+
+        //最大值和最小值
+        console.log(Number.MAX_VALUE);//1.7976931348623157e+308
+        console.log(Number.MIN_VALUE);//5e-324
+
+        // 字符串类型：string的使用
+        var name = "66呀";
+        var address = "广州市";
+        var introduce = '认真是一种可怕的力量';//也可以用单引号
+
+        console.log(name, address, introduce);
+
+        // 转义字符的使用：掌握\' \" \t \n 四个的用法
+        var message = 'fadbeh\tf\\be\'hq\"luryss';
+        console.log(message);
+
+        // 获取字符串的长度：length属性
+        console.log(message.length);
+
+        // 布尔类型
+        var isLogin = false;
+        if (!isLogin){
+            console.log("请登录，再进行后续操作");
+        }
+        console.log(isLogin);
+
+        // undefined：当一个变量进行了申明，但是没有赋值，这个时候他的值就是undefined
+        var flag;
+        console.log(flag);
+
+        // null:进行回收
+        var info = {name: "66", age: 18};
+        info = null;
+        console.log(typeof info);
+
+        // 数据类型的转换
+        var message = '123';
+        console.log(typeof message)
+
+        // 1、将message转换为数字类型
+        var num = Number(message);
+        console.log(typeof num);
+
+
+    </script>
+</body>
+</html>

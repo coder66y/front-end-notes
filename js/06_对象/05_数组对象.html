@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // 创建数组的两种方法
+    // 1.利用字面量创建数组
+    var arr = [1, 2, 3, 4, 5];
+    console.log(arr[0]);
+
+    // 2.利用new Array[]
+    var arr1 = new Array(2); // 一个值表示长度，这个表示有两个数组元素，元素为空
+    var arr2 = new Array(2, 3); // 两个值以上表示数组内容
+
+    console.log(arr1); // [空属性 × 2]
+    console.log(arr2); // [2, 3]
+
+    // 反转数组
+    function reverse(arr) {
+      for (var i = 0;i <= arr.length / 2; i++) {
+        temp = arr[i];
+        arr[i] = arr[arr.length - 1 - i];
+        arr[arr.length -1 - i] = temp;
+      }
+      return arr;
+    }
+
+    var arr3 = [1, 2, 3]
+    var obj ={};
+
+    console.log(reverse(arr3));
+    console.log(reverse(1, 2, 3));
+
+    // 检测是否为数组
+    // 1.instanceof 运算符 它可以用来检测是否为数组
+
+    console.log(arr3 instanceof Array);
+    console.log(obj instanceof Array);
+
+    // 2.Array.isArray() H5新增的方法 ie9以上的版本支持
+    console.log(Array.isArray(arr3)); 
+
+
+    // 添加数组对象的方法
+    // 1.push() 在我们数组的末尾 添加一个或者多个数组元素
+    var arr3 = [1, 2, 3];
+    // arr3.push(4, "pink");//在数组后追加新元素
+    console.log(arr3.push(4, "pink"));
+    console.log(arr3);// 原数组会发生改变
+
+    // 2.unshift() 在数组前加上新元素
+    // arr3.unshift(0);
+    console.log(arr3.unshift(0));
+    console.log(arr3); // 原数组会发生改变
+
+    // 3.pop() 删除数组最后一个数组元素
+    // arr3.pop();
+    console.log(arr3.pop());
+    console.log(arr3);
+
+    // 4.shift() 删除数组中的第一个元素
+    arr3.shift();
+    console.log(arr3);
+
+
+
+
+
+  </script>
+</body>
+</html>

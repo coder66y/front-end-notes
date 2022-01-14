@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* width of block=content width + margin-left + margin-right +padding+border */
+        /* 990=content width + 0 + 0 */
+        .container{
+            width: 990px;
+            height: 500px;
+            background-color: #f00;
+
+            margin: 0 auto;
+        }
+
+        .section{
+            float: left;
+
+            width: 190px;
+            height: 200px;
+            background-color: #00f;
+
+            margin-right: 10px;
+            margin-top: 10px;
+        }
+
+        /* 有的浏览器不支持这个伪类 */
+        .section:nth-child(5n){
+            margin-right: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="section section1"></div>
+        <div class="section section2"></div>
+        <div class="section section3"></div>
+        <div class="section section4"></div>
+        <div class="section section5"></div>
+        <div class="section section6"></div>
+        <div class="section section7"></div>
+        <div class="section section8"></div>
+        <div class="section section9"></div>
+        <div class="section section10"></div>
+    </div>
+</body>
+</html>

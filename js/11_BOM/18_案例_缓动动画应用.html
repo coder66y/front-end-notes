@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="../animate.js"></script>
+  <style>
+    .sliderbar{
+      width: 500px;
+      height: 30px;
+
+      margin: 100px 0;
+      position: relative;
+
+      overflow: auto;
+    }
+    span{
+      width: 50px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+
+      background-color: #ddd;
+      display: inline-block;
+      margin-left: 150px;;
+
+      z-index: 9;
+    }
+
+    .con{
+      width: 150px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      
+      /* padding-left: 30px; */
+
+      color: #fff;
+
+      background-color: purple;
+      display: inline-block;
+
+      position: absolute;
+      top: 0px;
+      left: 200px;
+
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+  <div class="sliderbar">
+    <span>←</span>
+    <div class="con">问题反馈</div>
+  </div>
+  <script>
+    // 1.获取元素
+    let sliderbar = document.querySelector(".sliderbar");
+    let con = document.querySelector(".con");
+    let span = document.querySelector("span");
+
+    span.addEventListener("mouseenter", function() {
+      animate(con, 10, function() {
+        span.innerHTML = "→";
+        console.log(1);
+      });
+
+    })
+   span.addEventListener("mouseleave", function() {
+      animate(con, 200, function () {
+        span.innerHTML = "←";
+        console.log(2);
+      });
+    })
+  </script>
+</body>
+</html>

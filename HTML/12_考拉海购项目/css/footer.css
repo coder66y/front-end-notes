@@ -1,0 +1,148 @@
+@charset "utf-8";
+
+
+#footer .service{
+    border-bottom: 1px solid #e9e9e9;
+    justify-content: space-evenly;
+}
+#footer .service li{
+    width: 233px;
+    height: 49px;
+    padding: 47px 0;
+
+    position: relative;
+}
+
+#footer .service li div{
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+
+    border-radius: 50%;
+    border: 2px solid #d6d6d6;
+   
+    font-size: 20px;
+    font-weight: 700;
+
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    margin:auto 0;
+
+    /* margin-right: 12px; */
+
+}
+#footer .service li .tit,
+#footer .service li .desc{
+    padding-left: 60px;
+
+    display: block;
+}
+#footer .service li .tit{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#footer .service li .desc{
+    font-size: 14px;
+}
+
+/* guide-第一栏-图片和介绍 */
+#footer .guide {
+    padding: 45px 0 90px;
+}
+#footer .guide .first{
+    width: 220px;
+}
+#footer .guide .first .logo{
+    display: block;
+    width: 220px;
+    height: 43px;
+    line-height: 45px;
+
+    margin-bottom: 20px;
+   
+    background: url(../img/kaola-logo.png) no-repeat;
+}
+#footer .guide .first .focus-on .pick{
+    position: relative;
+    bottom: 10px;
+}
+#footer .guide .first .focus-on .follow{
+    position: relative;
+    margin: 0 10px;
+}
+
+#footer .guide .first .focus-on .icon{
+    width: 32px;
+    height: 32px;
+
+    display: inline-block;
+    
+} 
+#footer .guide .first .focus-on .icon-weibo{
+    background: url(../img/icon-weibo.png) no-repeat;
+}
+#footer .guide .first .focus-on .icon-weixin{
+    background: url(../img/icon-weixin.png) no-repeat;
+}
+#footer .guide .first .focus-on .follow span{
+    display: none;
+    position: absolute;
+    left: -45px;
+    top:200%;
+
+    background-color: #fff;
+}
+#footer .guide .first .focus-on .follow span .arrow{
+    display: block;
+    width: 14px;
+    height: 14px;
+    background-color: #fff;
+
+    border-top: 1px solid #e9e9e9;
+    border-right: 1px solid #e9e9e9;
+
+    transform: rotate(-45deg);
+
+    position: absolute;
+    top: -7px;
+    right: 43%;
+}
+#footer .guide .first .focus-on .follow span img{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+
+    border: 1px solid #e9e9e9;
+}
+#footer .guide .first .focus-on .follow:hover span{
+    display: block;
+}
+
+/* 底部-guide-中间部分 */
+#footer .guide .center{
+    width: 80px;
+}
+#footer .guide .center h2{
+    font-weight: 400;
+}
+#footer .guide .center a{
+    display: block;
+    margin: 10px 0;
+}
+#footer .guide .center a:hover{
+    text-decoration: underline;
+}
+
+/* 底部-右边部分 */
+#footer .guide .last{
+    width: 110px;
+    text-align: center;
+}
+#footer .guide .last img{
+    display: block;
+    margin: 0 auto;
+}

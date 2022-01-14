@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .tab{
+      width: 998px;
+      margin: 50px auto;
+    }
+    ul{ 
+      height: 38px;
+      color: #666;
+      background-color: #f7f7f7;
+      border: 1px solid #eee;
+
+    }
+
+    li{
+      display: inline-block;
+      font-size: 14px;
+      padding: 10px 25px;
+    }
+    /* li:hover{
+      color: #e4393c;
+    } */
+    .item{
+      display: none;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="tab">
+    <div>
+      <ul>
+        <li>商品介绍</li>
+        <li>规格与包装</li>
+        <li>售后保障</li>
+        <li>商品评价</li>
+        <li>本店好评商品</li>
+      </ul>
+    </div>
+    <div class="tab_con">
+      <div class="item">商品介绍模块</div>
+      <div class="item">规格与包装模块</div>
+      <div class="item">售后保障模块</div>
+      <div class="item">商品评价模块</div>
+      <div class="item">本店好评商品模块</div>
+    </div>
+  </div>
+  <script>
+    var lis = document.querySelector("ul").querySelectorAll("li");
+    var items = document.querySelectorAll(".item");
+    // 排他思想来做点击效果
+    // var flag = 0;
+    // let flag = document.querySelector(".flag");
+    for(let i = 0; i < lis.length; i++) {
+       lis[i].onclick = function() {
+        for(let i = 0; i < lis.length; i++) {
+          lis[i].style.backgroundColor = "#f7f7f7";
+          lis[i].style.color = "#666";
+          items[i].style.display = "";
+          lis[i].setAttribute("class","");
+        }
+        lis[i].style.backgroundColor = "#e4393c";
+        lis[i].style.color = "#fff";
+        items[i].style.display = "block";
+        lis[i].setAttribute("class","flag");
+       }
+
+      lis[i].onmouseover = function() {
+        for(let i = 0; i < lis.length; i++) {
+          lis[i].style.color = "#666";
+          if(lis[i].getAttribute("class") === "flag"){
+            let flag = document.querySelector(".flag");
+            flag.style.color = "#fff";
+          }
+        }
+        if(lis[i].getAttribute("class") === "flag"){
+            let flag = document.querySelector(".flag");
+            flag.style.color = "#fff";
+          }
+        else{
+          lis[i].style.color = "#e4393c";
+        }
+        
+      }
+    }
+
+
+  </script>
+</body>
+</html>

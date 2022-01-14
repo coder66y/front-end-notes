@@ -1,0 +1,689 @@
+@charset "utf-8";
+
+/* 热门品牌样式 */
+/* #main{ */
+    /* position: relative; */
+/* } */
+
+#main{
+    justify-content: space-evenly;
+
+    min-width: 1290px;
+
+    margin: 0 auto;
+}
+#main .left-aside{
+    width: 99px;
+    height: 640px;
+    background-color: #fff;
+
+    margin-right: 15px;
+    margin-left: 120vw;
+    margin-left: 120vw;
+
+    position: sticky;
+    top: 65px;
+}
+
+#main .left-aside ul{
+    border: 1px solid #e9e9e9;
+
+    padding-bottom: 10px;
+}
+
+#main .left-aside ul li{
+    height: 32px;
+    line-height: 32px;
+
+    padding-left: 9px;
+
+}
+
+#main .left-aside ul li.tit{
+    height: 51px;
+    line-height: 51px;
+    color: #333;
+    font-size: 14px;
+    font-weight: 700;
+
+    border-bottom: 1px solid #e9e9e9;
+    margin-bottom: 10px;
+}
+#main .left-aside ul li:hover{
+    background-color: #f6f6f6;
+    color: #ff1e32;
+}
+#main .right-aside{
+    /* position: absolute; */
+    /* top: 10px; */
+    /* right: 10px; */
+    width: 62px;
+    height: 244px;
+
+    margin-left: 15px;
+    margin-right: 120vw;
+
+    border:1px solid #eaeaea; 
+    background-color: #fff;
+
+    position: sticky;
+    top: 65px;
+}
+/* a元素的边框 */
+#main .right-aside a{
+    display: block;
+    width: 62px;
+    height: 48px;
+    padding: 12px 0 0;
+    text-align: center;
+    font-size:12px;
+    
+    border-bottom:1px solid #eaeaea;
+}
+
+#main .right-aside .aside-top{
+    border-bottom: none;
+}
+
+/* 图标设置 */
+#main .right-aside i{
+    display:block;
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+    /* background-color: #0f0; */
+}
+
+#main .right-aside i.resign{
+    background-image: url(../img/考拉侧栏签到.png);
+}
+#main .right-aside i.shopping{
+    background-image: url(../img/考拉侧栏购物车.png);
+}
+#main .right-aside i.app_icon{
+    background-image: url(../img/考拉侧栏app.png);
+}
+#main .right-aside i.top_icon{
+    background-image: url(../img/考拉侧栏top.png);
+}
+
+#main .right-aside .app .phone{
+    display: none;
+
+    position: absolute;
+    right: 120%;
+    top: 70px;
+
+    border: 1px solid #eaeaea;
+    color: #000;
+    background-color: #fff;
+
+    z-index: 99;
+}
+#main .right-aside .app .phone .arrow{
+    right: -5%;
+    bottom: 50%;
+}
+#main .right-aside .app .phone img{
+    width: 120px;
+    height: 120px;
+
+    margin: 8px;
+}
+#main .right-aside .app .phone .download{
+    font-weight: 700;
+    font-size: 14px;
+}
+#main .right-aside .app .phone .red-bag{
+    color: #ff0000;
+
+    margin-bottom: 8px;
+}
+/* 右侧栏悬浮 */
+#main .right-aside .text{
+    display: none; 
+
+    position: absolute;
+    left: -130%;
+    bottom: 80%;
+
+    padding: 5px 10px;
+
+
+    border: 1px solid #eaeaea;
+    color: #333;
+    background-color: #fff;
+
+    z-index: 99;
+}
+#main .right-aside .resign:hover .text{
+    display: block;
+ } 
+
+ #main .right-aside .arrow{
+    width: 8px;
+    height: 8px;
+    
+    position:absolute;
+    right: -7%;
+    bottom: 40%;
+
+    border-top: 1px solid #eaeaea;
+    border-right: 1px solid #eaeaea;
+    
+    transform: rotate(45deg);
+    background-color: #fff;
+}
+
+#main .right-aside a:hover{
+    color:#ff1e32;
+    background-color: #eaeaea;
+}
+
+#main .right-aside a:hover i.resign{
+    background-image: url(../img/考拉侧栏签到红.png);
+}
+#main .right-aside a:hover i.shopping{
+    background-image: url(../img/考拉侧栏购物车红.png);
+}
+#main .right-aside a:hover i.app_icon{
+    background-image: url(../img/考拉侧栏APP红.png);
+}
+#main .right-aside a:hover i.top_icon{
+    background-image: url(../img/考拉侧栏top红.png);
+}
+
+#main .right-aside .app:hover .phone{
+    display: block;
+}
+
+#main .top{
+    height: 49px;
+    line-height: 49px;
+    padding: 25px 0 0;
+    border-top: 1px solid #e9e9e9;
+
+    position: relative;
+}
+
+#main .top h2{
+    color: #333;
+    font-size: 22px;
+    margin-right: 10px;
+}
+#main .top p,
+#main .top a{
+    font-size: 14px;
+    color: #999;
+}
+#main .top span{
+    position: absolute;
+    left:108px;
+    bottom: -4.5px;
+}
+#main .top span p{
+    display: inline;
+}
+#main .top span a{
+    margin-left: 20px;
+}
+#main .top span a.active{
+    color: #ff080f;
+}
+#main .top a.f-right{
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+}
+#main .top a:hover{
+   text-decoration: underline;
+}
+
+/* 热门品牌-下面品牌-布局样式 */
+#main .hot-brand .f-left{
+    /* background-color: #f00; */
+    width: 220px;
+    height: 355px;
+
+    border-top: 1px solid #e9e9e9;
+    border-left: 1px solid #e9e9e9;
+    border-bottom: 1px solid #e9e9e9;
+    margin-right: -1px;
+}
+
+#main .hot-brand .list{
+    width: 880px;
+    height: 354px;
+}
+
+#main .hot-brand .list li{
+    float: left;
+    width: 219px;
+    height: 177px;
+
+    border-right: 1px solid #e9e9e9;
+    border-bottom: 1px solid #e9e9e9;
+
+    position: relative;
+}
+
+/* 热门品牌-左边图片*/
+#main .hot-brand .left {
+    text-align: center;
+    color: #fff;
+}
+#main .hot-brand{
+    background-color: #fff;
+    text-align: center;
+}
+#main .hot-brand .left img{
+    width: 220px;
+    height: 220px;
+}
+#main .hot-brand .left .line{
+    /* width: 100px; */
+    height: 3px;
+    background-color: #333;
+}
+#main .hot-brand .left .progress{
+    width: 100px; 
+    height: 3px;
+    background-color: #ff1e32;
+}
+#main .hot-brand .left .txt{
+    background-color: #151515;
+    height: 132px;
+    /* line-height: 136px; */
+}
+
+#main .hot-brand .left .txt p{
+    display: block;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    margin: 0 12px;
+    color: #fff;
+
+    opacity: .8;
+}
+#main .hot-brand .left .txt p.name{
+    font-size: 20px;
+    font-weight: 700;
+
+    padding: 41px 0 4px;
+}
+
+#main .hot-brand .left .txt p.desc{
+    font-size: 14px;
+}
+
+/* 热门品牌-图片 */
+#main .hot-brand .list img{
+    display: block;
+    margin: 12px auto 0;
+    width: 120px;
+    height: 120px;
+}
+/* 图片的文字描述 */
+#main .hot-brand .list p.desc{
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+}
+
+/* 热门品牌-悬浮样式+效果 */
+#main .hot-brand .list .actions .pick{
+    display: inline-block;
+    position:absolute;
+    top: 10px;
+    left: 10px;
+
+    width: 52px;
+    height: 20px;
+    line-height: 20px;
+
+    color: #999;
+    border: 1px solid #999;
+    /* opacity: 0; */
+    border-radius: 20px;
+}
+
+#main .hot-brand .list .actions .follows{
+    position:absolute;
+    top: 99px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    
+
+    color: #999;
+}
+
+#main .hot-brand .list .actions .enter{
+    position:absolute;
+    left: 0;
+    right: 0;
+    bottom: 15px;
+    margin: 0 auto;
+
+    display: block;
+    width: 80px;
+    height: 36px;
+    line-height: 32px;
+    box-sizing: border-box;
+
+    font-size: 14px;
+    color: #ff1e3c;
+    background-color: #fff;
+
+    border-radius: 32px;
+    border: 2px solid #ff1e3c;
+}
+
+#main .hot-brand .list .actions{
+    opacity: 0; 
+}
+#main .hot-brand .list li:hover .actions{
+    opacity: 1;
+} 
+#main .hot-brand .list li:hover .desc{
+    opacity: 0;
+}
+#main .hot-brand .list li:hover img{
+    position: relative;
+    top: -10px;
+    transform: scale(.66);
+    transition: top .3s ease,transform .3s ease;
+}
+
+#main .hot-brand .list .actions .pick:hover{
+    background-color: #f5f5f5;
+}
+#main .hot-brand .list .actions .enter:hover{
+    background-color: #fff4f5;
+}
+
+/* 手表配饰 */
+#main .bottom{
+    background-color: #fff;
+}
+#main .clocks{
+    display: flex;
+
+    border-top: 1px solid #e9e9e9;
+    border-left: 1px solid #e9e9e9;
+}
+
+
+#main .clocks .left{
+    width: 330px;
+    height: 541px;
+
+    border-right: 1px solid #e9e9e9;
+    border-bottom: 1px solid #e9e9e9;
+
+    position: relative;
+}
+#main .clocks .left .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: 280px;
+    height: 100px;
+
+    position:absolute;
+    bottom: 8px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+#main .clocks .left .container div{
+    width: 80px;
+    height: 18px;
+    padding: 11px 0;
+
+    /* font-size:12px; */
+    color: #333;
+    text-align: center;
+    background-color: #fff;
+
+    border: 1px solid #ededed;
+    border-radius: 20px;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.1);
+
+}
+#main .clocks .left .container div:hover{
+    color: #ff1e32;
+    background-color: hsla(0,0%,100%,.7);
+}
+
+
+#main .clocks center{
+    width: 275px;
+}
+#main .clocks .center div{
+    width: 274px;
+    height: 271px;
+    box-sizing: border-box;
+    text-align: center;
+
+    border-right: 1px solid #e9e9e9;
+    border-bottom: 1px solid #e9e9e9;
+}
+#main .clocks .center div a h2{
+    font-size: 24px;
+    color: #333;
+    padding-top: 20px;
+}
+#main .clocks .center div a p{
+    font-size: 14px;
+    color: #666;
+
+    margin: 10px;
+}
+
+
+#main .clocks .right div{
+    width: 220px;
+    height: 119px;
+
+    border-right: 1px solid #e9e9e9;
+    border-bottom: 1px solid #e9e9e9;
+}
+#main .clocks .right .title{
+    height: 61px;
+    line-height: 61px;
+
+    position: relative;
+}
+#main .clocks .right .title h2{
+    font-size: 16px;
+    color: #333;
+    padding-left: 10px;
+}
+#main .clocks .right .title span{
+    position: absolute;
+    top: 0;
+    right: 40px;
+}
+#main .clocks .right .title a{
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+
+    border-radius: 6px;
+
+    background-color: #e1e1e1;
+
+    margin-right: 5px;
+}
+#main .clocks .right .title a:hover{
+    background-color: #333;
+}
+
+#main .clocks .right .hot-sale{
+    padding: 25px 0 0 0;
+    border-right: none;
+    border-bottom: none;
+
+    position: relative;
+
+}
+
+#main .clocks .right .hot-sale .desc{
+    display: inline-block;
+    width: 140px;
+
+    position:absolute;
+    right: 5px;
+    top: 20%;
+}
+#main .clocks .right .hot-sale .desc .tit{
+    display: block;
+    width: 140px;
+    height: 36px;
+    overflow: hidden;
+
+    color: #666;
+}
+#main .clocks .right .hot-sale .desc .tit:hover{
+    text-decoration: underline;
+}
+#main .clocks .right .hot-sale .desc .price strong{
+    font-size: 20px;
+    color: #ff1e32;
+}
+#main .clocks .right .hot-sale .desc .price span{
+    font-size: 14px;
+    text-decoration: line-through;
+}
+
+
+#main .clocks .right .pic{
+    width: 75px;
+    height: 75px;
+    display: inline-block;
+}
+#main .clocks .right .pic img{
+    display: inline-block;
+}
+
+
+/* 手机配饰-热卖品牌 */
+#main .brands-title{
+    /* width: 1098px; */
+    height: 48px;
+    line-height: 48px;
+
+    text-indent: 20px;
+    font-size: 16px;
+    color: #000;
+    font-weight: 700;
+
+    border:1px solid #e9e9e9;
+    background-color: #fff;
+    margin-top: 20px;
+
+}
+#main .brands-name{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    margin-bottom: 40px;
+}
+#main .brands-name a{
+    display: inline-block;
+    width: 220px;
+    height: 168px;
+    line-height: 168px;
+
+    border-bottom:1px solid #e9e9e9;
+    border-right:1px solid #e9e9e9;
+    text-align: center;
+
+    position: relative;
+}
+#main .brands-name .first{
+    border-left: 1px solid #e9e9e9;
+}
+#main .brands-name .love{
+    background-image: url(../img/vertical-list-love-red.png);
+    background-size: 100% 100%;
+
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+
+    position: absolute; 
+    right: 10px;
+    top: 10px;
+
+    display: none;
+}
+#main .brands-name a:hover .love{
+    display: inline-block;
+}
+
+/* 猜你喜欢 */
+#main .rec{
+    justify-content: space-between;
+}
+#main .rec div{
+    width: 260px;
+    height: 382px;
+}
+ 
+#main .rec .pic{
+    display: block;
+    width: 260px;
+    height: 260px;
+    text-align-last: center;
+    background-color: #fff;
+
+    border: 1px solid #e9e9e9;
+    position: relative;
+}
+#main .rec .pic img{
+    width: 180px;
+    height: 180px;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+#main .rec .desc .tit{
+    display: block;
+    height: 43px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+    margin: 7px 0 14px;
+    padding-right: 30px;
+
+    font-size: 16px;
+    font-weight: 700;
+    color: #333;
+}
+
+#main .rec .desc .price strong{
+    font-size: 20px;
+    color: #ff1e32;
+}
+#main .rec .desc .price span{
+    text-decoration-line: line-through;
+}
+#main .rec .desc .follows{
+   margin-left: 80px;
+}
+#main .rec .desc .follows:hover{
+    text-decoration: underline;
+}

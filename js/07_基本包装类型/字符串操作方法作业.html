@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var str = "abaasdffggghhjjkggk44gfddsssss3444343";
+    // 字符串的长度
+    console.log(str.length);
+    // 取出指定位置的字符：如0,3,5,9;
+    console.log(str[0], str[3], str[5]);
+    console.log(str.charAt(0),str.charAt(3),str.charAt(5));
+    // 找出一下字符是否在字符串中存在：i,c,b
+    var i, c, b;
+    console.log(str.indexOf(i));
+    console.log(str.indexOf(c));
+    console.log(str.indexOf(b));
+
+    // 替换字符
+    console.log(str.replace("g","22"));
+    console.log(str.replace("ss","b"));
+
+    // 截取字符串
+    console.log(str.substr(1,5));
+    // 找出出现最多的字符，和出现的次数
+    var o = {};
+    var max = 0;
+    var maxChars = [];
+    for (i = 0; i < str.length; i++) {
+      var chars = str.charAt(i)
+      if (o[chars]){
+        o[chars]++;
+      }
+      else{
+        o[chars] = 1;
+      }
+    }
+
+    for(k in o){
+      if (max <= o[k]){
+        max = o[k];
+      }
+    }
+
+    for(k in o){
+      if(o[k] == max){
+        maxChars.push(k);
+      }
+    }
+
+
+    console.log(o);
+    console.log("出现次数最多的字符:",maxChars.toString());
+    console.log("出现最多的次数:",max);
+  </script>
+</body>
+</html>

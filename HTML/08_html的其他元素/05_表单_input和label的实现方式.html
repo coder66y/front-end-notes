@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 去掉input的默认模式 */
+        input,textarea{
+            outline:none;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        /* 设置想要的样式 */
+        input:focus,textarea:focus{
+            border-color:#4791ff;
+            border-style:solid;
+        }
+    </style>
+</head>
+<body>
+    <form action="http://www.baidu.com" 
+          method="post" 
+          enctype="multipart/form-data">
+        <div>
+            <label for="phone">手机：</label>
+            <input type="text" 
+                id="phone"
+                maxlength="11"
+                placeholder="请输入您的手机号" 
+                autofocus
+                name="phone">
+        </div>
+        <div>
+            <label for="password">密码：</label>
+            <input type="password" id="password" name="password">
+        </div>
+        <div>
+            <span>性别：</span>
+            <label for="male">男</label>
+            <input type="radio" name="sex" id="male" value="male">
+            <label for="female">女</label>
+            <input type="radio" name="sex" id="female" value="female" checked >
+        </div>
+        <!--学历 -->
+        <div>
+            <span>学历：</span>
+            <select id="" multiple size="1" name="enducation">
+                <option value="0">小学</option>
+                <option value="1">初中</option>
+                <option value="2" selected>高中</option>
+            </select>
+        </div>
+        <div>
+            <span>照片</span>
+            <input type="file" name="photo">
+        </div>
+        <!-- 简历 -->
+        <div>
+            <label for="introdution">简历</label>
+            <textarea name="introdution" id="introdution" cols="30" rows="10"></textarea>
+        </div>
+        <input type="reset">
+        <input type="submit">
+    </form>
+    
+</body>
+</html>

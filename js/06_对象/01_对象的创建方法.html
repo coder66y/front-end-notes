@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // // 一、利用对象字面量创建对象{}
+    // // var obj = {};//创建一个空对象
+    // var obj = {
+    //   uname: '张三丰',
+    //   age: 18,
+    //   sex: "男",
+    //   sayHi: function() {
+    //     console.log("hello~");
+    //   }
+    // }
+    // // 1.里面的属性或者方法采用键值对的形式 键 属性名： 值  属性值
+    // // 2.多个属性或者方法中间用逗号隔开
+    // // 3.方法冒号后面跟的是一个匿名函数
+
+    // // 二、使用对象
+    // // 1.调用对象的属性 我们使用 对象名.属性名
+    // console.log(obj.age);
+    // // 2.调用对象属性还有一种方法 对象名["属性名"]
+    // console.log(obj["sex"]);
+    // // 调用对象方法 对象名.方法名()不要忘记括号。
+    // obj.sayHi();
+
+    // // 练习
+    // var obj = {
+    //   name: "keke",
+    //   type: "阿拉斯加",
+    //   age: 5,
+    //   color: "red-brown",
+    //   bark: function(){
+    //     console.log("汪汪汪");
+    //   },
+    //   showFilm: function(){
+    //     console.log("天外飞仙");
+    //   },
+    // }
+
+    // console.log(obj.name);
+    // obj.bark();
+
+    // // 变量 属性 函数 方法的区别
+    // // 变量和属性相同点：都用来存储数据
+    // var num = 10;
+    // var obj = {
+    //   age: 18
+    // }
+    // // 不同点：
+    // // 变量 单独声明并赋值，使用的时候直接写变量名 单独存在
+    // // 属性 在对象里面不需要声明，使用的时候必须是 对象.属性
+    // console.log(num);
+    // console.log(obj.age);
+    // // console.log(age)//报错
+
+    // // 函数和方法相同点
+    // // 都实现某种功能
+    // // 不同点
+    // // 函数 单独声明 调用时函数名() 单独存在
+    // // 方法 在对象里面 调用的时候 对象.方法()
+
+    // // 利用new object 创建对象
+    // var obj = new Object();//创建了一个空的对象
+    // // 注意Object O需要大写
+    // obj.uname = "张三丰";
+    // obj.age = 18;
+    // obj.sex = "男"; 
+    // obj.sayHi = function(){
+    //   console.log("hello~");
+    // }
+    // console.log(obj.age);
+    // console.log(obj.uname);
+
+    // obj.sayHi();
+
+
+    // 我们为什么需要构造函数?
+    // 因为我们一次创建一个对象,里面很多属性和方法是大量相同的,我们只能复制
+    // 因此我们可以利用函数的方法,重复这些代码,我们就把这个函数称为构造函数
+    // 这个函数不一样,里面封装的不是普通代码,而是对象
+    // 构造函数 就是把对象中公共的属性和方法封装到函数里面
+
+    // 构造函数语法格式
+    // function 构造函数名() {
+    //   this.属性 = 值;
+    //   this.方法 = function() {}
+    // }
+
+    // 1.构造函数首字母大写
+    // 2.我们构造函数可以不用renturn就可以返回结果
+    // 3.调用构造函数，必须使用new
+    // // 4.我们只要new Star() 调用函数就创建一个对象
+    // function Star(uname, age, sex) {
+    //   this.name = uname;
+    //   this.age = age;
+    //   this.sex = sex;
+    // }
+
+    // var ldh = new Star("刘德华", 18, "男");
+    // console.log(ldh.sex,ldh.uname);
+    // // var ldh = new Object();
+    // ldh.hobby = "打篮球";
+    // console.log(ldh.hobby);
+    // ldh.skill = function(){
+    //   console.log("唱歌和演戏")
+    // }
+    // ldh.skill();
+
+    // // 练习
+    // function Star(uname, type, blood){
+    //     this.name = uname;
+    //     this.type = type;
+    //     this.blood = blood;
+    //     this.attack = function(skill){
+    //       console.log(skill);
+    //     }
+    // }
+
+    // var lp = new Star("廉颇", "力量型", "500血量");
+    // var hy = new Star("后羿", "射手型", "100血量");
+    // lp.attack("近战");
+    // hy.attack("远程")
+    // console.log(lp.name,lp.blood);
+    // console.log(hy.name,hy.blood);
+
+    // lp.attack();
+
+    var obj = {
+      name: "keke",
+      type: "阿拉斯加",
+      age: 5,
+      color: "red-brown",
+      bark: function(){
+        console.log("汪汪汪");
+      },
+      showFilm: function(){
+        console.log("天外飞仙");
+      }
+    }
+    
+    // for in 遍历对象
+    // for （变量 in 对象）
+    for (k in obj){
+      console.log(k);
+      console.log(obj[k]);
+    }
+    
+  </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <div class="box">
+      <div class="erweima">X</div>
+    </div>
+  </div>
+  <ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+  </ul>
+  <ol>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+  </ol>
+  <script>
+    // 1.父节点 parentNode
+    var erweima = document.querySelector(".erweima");
+
+    // 得到的是离元素最近的父级节点
+    console.log(erweima.parentNode);
+    // 2.子节点 childNodes 所有的节点，包括元素节点和文本节点等
+    var ul = document.querySelector("ul");
+    console.log(ul.childNodes);
+
+    // 3.子元素节点 children
+    console.log(ul.children);
+
+    // 4.firstChild 第一个子节点（元素或者文本）
+    //  lastChild 最后一个子节点（元素或者文本）
+    console.log(ul.firstChild);
+    console.log(ul.firstElementChild);
+    console.log(ul.lastChild);
+    console.log(ul.lastElementChild);
+
+    // 5.实际开发的写法
+    // 第一个子元素和最后一个子元素
+    console.log(ul.children[0]);
+    console.log(ul.children[ul.children.length - 1]);
+
+
+    //
+  </script>
+</body>
+</html>

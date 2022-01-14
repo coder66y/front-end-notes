@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            display: inline-block;
+            width: 80px;
+            height: 30px;
+            line-height: 30px;
+            border-top: 1px solid #00f;
+            border-right: 1px solid #00f;
+            text-align: center;
+        }
+        div{
+            display: inline-block;
+            border-left: 1px solid #00f;
+            border-bottom: 1px solid #00f;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // var i = 1;
+        // var sum = 0;
+
+       /* while (i <= 99) {
+            
+            sum = i + sum;
+            ++i;
+        }
+        console.log(sum, i);
+        */
+
+        // 计算所有奇数的和
+       /* while (i < 100) {
+            sum = i + sum;
+            i=i+2
+        }
+        console.log(sum, i);*/
+
+       /* while (i < 100) {
+            if (i % 2 !== 1){
+                console.log(i);
+                sum = i +sum;
+            }
+            i++;
+
+        }
+        console.log(sum);*/
+        
+        /*// 用for循环语句来写1-99的和
+        var sum = 0;
+
+        for (var i = 1; i < 100; i++) {
+            sum = sum + i;
+        }
+        console.log(sum);*/
+
+        // 乘法口诀表   
+        document.write("<div>");
+        for (var i = 1; i < 10; i++) {
+            for (var j = 1; j <= i; j++) {
+                var mult = i * j;
+                document.write("<span>"+j + "×" + i + "=" + mult+"</span>");
+            }
+            document.write("<br>");
+        }
+        document.write("</div>");
+    </script>
+
+
+</body>
+</html>

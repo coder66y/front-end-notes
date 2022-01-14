@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .phone{
+      width: 400px;
+      height: 400px;
+
+      position: relative;
+      border: 1px solid #ddd;
+
+      /* overflow: hidden; */
+    }
+
+    .mask{
+      display: none;
+      width: 300px;
+      height: 300px;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      background-color: #fede4f;
+      opacity: .5;
+      border: 1px solid #ddd;
+
+      cursor: move;
+    }
+
+    .big{
+      display: none;
+      width: 500px;
+      height: 500px;
+
+      position: absolute;
+      left: 412px;
+      top: 0;
+
+      background-color: #fff;
+
+      overflow: hidden;
+    }
+
+    .phone>img{
+      width: 400px;
+    }
+
+    .big>img{
+      width: 660px;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="phone">
+    <img  class="phone-img" src="../../笔记/js/bom/img/京东放大镜图片.jpg" alt="">
+    <div class="mask"></div>
+    <div class="big">
+      <img class="big-img" src="../../笔记/js/bom/img/京东放大镜图片.jpg" alt="">
+    </div>
+  </div>
+  <script>
+    let phone = document.querySelector(".phone");
+    let mask = document.querySelector(".mask");
+    let big = document.querySelector(".big");
+
+    // 1.鼠标经过事件
+    phone.addEventListener("mouseover", function() {
+      mask.style.display = "block";
+      big.style.display = "block";
+    })
+    phone.addEventListener("mouseout", function() {
+      mask.style.display = "";
+      big.style.display = "";
+    })
+
+    // 2.遮挡层跟着鼠标移动
+    phone.addEventListener("mousemove", function(e) {
+      // 算出鼠标在盒子里面的坐标
+      let x = e.pageX - this.offsetLeft;
+      let y = e.pageY - this.offsetTop;
+
+      let maskX = x - mask.offsetWidth / 2;
+      let maskY = y - mask.offsetHeight / 2;
+      
+      // 限制遮盖层宽度
+      let maskMax = phone.offsetWidth - mask.offsetWidth;
+      if(maskX <= 0){
+        maskX = 0;
+      }
+      else if(maskX > maskMax) {
+        maskX = 100;
+      }
+      if(maskY <= 0){
+        maskY = 0;
+      }
+      else if(maskY > maskMax) {
+        maskY = 100;
+      }
+
+      mask.style.left = maskX + "px";
+      mask.style.top = maskY + "px";
+      // mask.style.transform = "translate(-50%, -50%)";
+
+      let bigImg = document.querySelector(".big-img");
+    // 大图片最大移动距离
+    let bigMax = bigImg.offsetWidth - big.offsetWidth;
+    // 重点：大图片移动距离
+    let bigX = maskX * bigMax / maskMax;
+    let bigY = maskY * bigMax / maskMax;
+
+    // 注意这里大图片移动的距离为负值
+    bigImg.style.left = -bigX + "px";
+    bigImg.style.top = -bigY + "px";
+    })
+  </script>
+</body>
+</html>

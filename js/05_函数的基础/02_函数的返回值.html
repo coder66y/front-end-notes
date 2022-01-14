@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        function sum(num1, num2) {
+            var result = num1 + num2;
+            // console.log(result);
+            return result;
+        }
+        var total = sum(40, 20);
+        console.log(total);
+        // 返回值的注意事项
+        // 1.一旦函数没有写返回值，相当于默认返回undefined
+        // 2.一旦函数中执行了return操作，函数就会立即停止执行，后续的代码都不再执行
+        // 3.如果一个函数写了return，return后面没有跟内容，相当于return了一个undefined
+
+        function test() {
+            console.log("1");
+            console.log("2");
+            return;
+            console.log("3");
+            console.log("4");
+        }
+
+        var result = test();
+        console.log(result);
+    </script>
+
+</body>
+</html>

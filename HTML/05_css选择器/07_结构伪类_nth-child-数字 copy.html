@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+ 
+        /* 只要是第三个子元素都会变红所以第二个div全红 */
+        :nth-child(3) {
+            color: red;
+        }
+
+        /* 交集选择器
+       *s是p元素
+       *同时是子元素中的第四个元素
+       */
+        p:nth-child(4) {
+            color: blue;
+        }
+
+        /* 后代选择器
+       *p后面有空格，选p的后代
+       *是p元素中的第2个元素
+       */
+        p :nth-child(2) {
+            color: green;
+        }
+
+        /* 只要是第n个子元素都会变红*/
+        :nth-child(n) {
+            color: deeppink;
+        }
+
+        /* 倒数第三个 */
+        :nth-last-child(3) {
+            color: red;
+        }
+
+        /* 倒数后面三个 */
+        /* 倒数后面三个 */
+        :nth-last-child(-n+3) {
+            color: red;
+        }
+
+        body {
+
+            border: solid;
+            background-image: url("../../../图片可爱/src=http___www.lehuoing.com_images_activities_202005_200528085342905.gif&refer=http___www.lehuoing.gif");
+            background-repeat: no-repeat;
+            background-origin: border-box;
+            background-position: left center;
+            background-size: 20px;
+            margin: 20px;
+            padding: 25px;
+        }
+        html{
+            background-color: #fff;
+        }
+ 
+        p,div {
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>文字内容1</p>
+    <p>文字内容2</p>
+    <p>文字内容3</p>
+    <p>文字内容4</p>
+    <p>文字内容5</p>
+    <p>文字内容6</p>
+    <p>文字内容7</p>
+    <p>文字内容8</p>
+
+    <p class="p1">
+        <span>span文字内容1</span>
+        <span>span文字内容2</span>
+        <span>span文字内容3</span>
+        <span>span文字内容4</span>
+        <span>span文字内容5</span>
+    </p>
+    <div>
+        <strong>strong文字内容1</strong><strong>strong文字内容2</strong><strong>strong文字内容3</strong><strong>strong文字内容4</strong>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+/* 指定css的编码 */
+@charset "utf-8";
+
+/* 选定单个元素 */
+div{background-color:red;
+    font-size:60px;
+    color:blue;
+   }
+
+   /* 并集选择器 */
+   p,a{
+    font-size:30px;
+    color:orange; 
+   }
+
+   /* 类选择器 */
+    .p1{ color:green;
+        font-family: "楷体";
+       }

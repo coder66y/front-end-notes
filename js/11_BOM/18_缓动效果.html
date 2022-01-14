@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  div{
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+
+    position: absolute;
+    top: 50px;
+    left: 0;
+  }
+</style>
+<body>
+  <button class="reset">重来</button>
+  <button class="btn300">300</button>
+  <button class="btn500">500</button>
+ 
+  <div></div>
+  <script>
+    // 缓动动画公式：步长值变小： 步长值 = （目标值 - 现在的位置）/ 10
+    // 匀速动画公式： 步长值固定
+    // 加速动画公式： 步长值变大
+    function animate(obj, target,callback) {
+        clearInterval(obj.timer);
+          obj.timer = setInterval(function(){
+          let step = Math.ceil((target - obj.offsetLeft) / 10);
+          step = step > 0?Math.ceil(step) : Math.floor(step);
+          if(obj.offsetLeft == target) {
+            clearInterval(obj.timer);
+            if(callback){
+              callback();
+            }
+          }
+          else{
+            // 把每次 +5 改为一个慢慢变小的值 步长值
+            obj.style.left = obj.offsetLeft + step+ "px";
+          }
+        },50);
+    }
+    let btn300 = document.querySelector(".btn300");
+    let btn500 = document.querySelector(".btn500");
+    let reset = document.querySelector(".reset");
+    let div = document.querySelector("div");
+
+   btn300.addEventListener("click", function(){
+      animate(div, 300, function(){
+        console.log(1);
+      });
+    })
+   btn500.addEventListener("click", function(){
+      animate(div, 500, function cellback(){
+          div.style.backgroundColor = "red";
+          console.log("2你好吗？");
+        });
+    })
+
+    reset.addEventListener("click", function() {
+      location.reload();
+    })
+  </script>
+</body>
+</html>

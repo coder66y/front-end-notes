@@ -1,0 +1,374 @@
+@charset "utf-8";
+
+#top .topbar{
+    height: 40px;
+    line-height: 40px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+/* topbar:横向列表*/
+#top .wrap .category{
+    position: relative;
+    float: left;
+    width: 164px;
+    background: linear-gradient(90deg,red, #ff3264);
+    text-align: left;
+    font-size: 14px;
+    color: #fff;
+    margin-right: 25px;
+}
+
+#top .wrap .category .lineicon{
+    margin: 0 24px 0 15px;
+}
+
+#top .topbar .horizontal-list li{
+    float: left;
+
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+
+    padding: 0 20px;
+}
+#top .topbar .horizontal-list li a:hover{
+    color: #ff1e32;
+}
+
+/* 纵向列表 */
+#top .wrap .category .vertical-list{
+    position: absolute;
+    width: 164px;
+
+    background: linear-gradient(90deg,red, #ff3264);
+    
+    border-top: .5px solid #ff5160;
+    
+    z-index:99;
+}
+
+#top .wrap .category .vertical-list li{
+    height: 38.3px;
+    line-height: 38.3px;
+}
+#top .wrap .category .vertical-list a{
+    color: #fff;
+}
+
+/* 箭头 */
+#top .wrap .category .vertical-list .arrow{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+
+    border-top: .5px solid #ff96ad;
+    border-right: .5px solid #ff96ad;
+
+    transform: rotate(45deg);
+
+    margin-left: 10px;
+}
+/* 让轻奢的这个箭头对齐 */
+#top .wrap .category .vertical-list .right{
+    margin-right: 28px;
+}
+
+
+/* 纵向列表-分割线 */
+#top .wrap .category .vertical-list .seg{
+    display: block;
+    width: 154px;
+    height: 0.5px;
+    background-color: #ff5160;
+    margin: 0 auto;
+}
+
+#top .wrap .category .vertical-list i{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+
+    margin: 0px 24px 0 15px;
+
+    position: relative;
+    top: 5px;
+
+}
+#top .wrap .category .vertical-list img{
+    /* display: inline-block; */
+    width: 20px;
+    height: 20px;
+
+    margin: 0px 24px 0 15px;
+}
+
+/* 小图标悬浮 */
+#top .wrap .category .vertical-list li .style{
+    background-image: url(../img/vertical-list-style.png);
+    background-size: 100% 100%;
+}
+#top .wrap .category .vertical-list li .baby{
+    background: url(../img/vertical-list-baby-cart.png) no-repeat;
+    background-size: 100% 100%;
+}
+#top .wrap .category .vertical-list li .love{
+    background: url(../img/vertical-list-love.png) no-repeat;
+    background-size: 100% 100%;
+}
+#top .wrap .category .vertical-list li .photo{
+    background: url(../img/vertical-list-photo-white.png) no-repeat;
+    background-size: 100% 100%;
+}
+#top .wrap .category .vertical-list li .clear{
+    background: url(../img/vertical-list-clear-white.png) no-repeat;
+    background-size: 100% 100%;
+}
+#top .wrap .category .vertical-list li .cloth{
+    background: url(../img/vertical-list-cloth-white.png) no-repeat;
+    background-size: 100% 100%;
+}
+#top .wrap .category .vertical-list li .sports{
+    background: url(../img/vertical-list-sports.png) no-repeat;
+    background-size: 100% 100%;
+}
+#top .wrap .category .vertical-list li .time{
+    background: url(../img/vertical-list-time-white.png) no-repeat;
+    background-size: 100% 100%;
+}
+#top .wrap .category .vertical-list li .bag{
+    background: url(../img/vertical-list-bag-white.png) no-repeat;
+    background-size: 100% 100%;
+}
+#top .wrap .category .vertical-list li .bed{
+    background: url(../img/vertical-list-bed-white.png) no-repeat;
+    background-size: 100% 100%;
+}
+#top .wrap .category .vertical-list li .hamberg{
+    background: url(../img/vertical-list-hamberg.png) no-repeat;
+    background-size: 100% 100%;
+}
+#top .wrap .category .vertical-list li .car{
+    background: url(../img/vertical-list-car-white.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+/* 纵向列表悬浮 */
+#top .wrap .category .vertical-list li:hover{
+    background-color: #fff;
+}
+
+#top .wrap .category .vertical-list li:hover a{
+    color:#ff1e32;
+}
+
+
+#top .wrap .category .vertical-list li:hover .style{
+    background: url(../img/vertical-list-style-red.png) no-repeat;
+    background-size: 100% 100%;
+}
+#top .wrap .category .vertical-list li:hover .baby{
+    background: url(../img/vertical-list-baby-red.png) no-repeat;
+    background-size: 100% 100%;
+}
+#top .wrap .category .vertical-list li:hover .love{
+    background: url(../img/vertical-list-love-red.png) no-repeat;
+    background-size: 100% 100%;
+}
+#top .wrap .category .vertical-list li:hover .photo{
+    background: url(../img/vertical-list-photo-red.png) no-repeat;
+    background-size: 100% 100%;
+}
+#top .wrap .category .vertical-list li:hover .clear{
+    background: url(../img/vertical-list-clear-red.png) no-repeat;
+    background-size: 100% 100%;
+}
+#top .wrap .category .vertical-list li:hover .cloth{
+    background: url(../img/vertical-list-cloth-red.png) no-repeat;
+    background-size: 100% 100%;
+}
+#top .wrap .category .vertical-list li:hover .sports{
+    background: url(../img/vertical-list-sports-red.png) no-repeat;
+    background-size: 100% 100%;
+}
+#top .wrap .category .vertical-list li:hover .time{
+    background: url(../img/vertical-list-time-red.png) no-repeat;
+    background-size: 100% 100%;
+}
+#top .wrap .category .vertical-list li:hover .bag{
+    background: url(../img/vertical-list-bag-red.png) no-repeat;
+    background-size: 100% 100%;
+}
+#top .wrap .category .vertical-list li:hover .bed{
+    background: url(../img/vertical-list-bed-red.png) no-repeat;
+    background-size: 100% 100%;
+}
+#top .wrap .category .vertical-list li:hover .hamberg{
+    background: url(../img/vertical-list-hamberg-red.png) no-repeat;
+    background-size: 100% 100%;
+}
+#top .wrap .category .vertical-list li:hover .car{
+    background: url(../img/vertical-list-car-red.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+
+/* 轮播图 */
+#top .banner{
+    overflow: hidden;
+    min-width: 1100px;
+
+    position: relative;
+        
+    /* margin-bottom: 20px; */
+}
+
+/* 轮播图-按钮 */
+/* #top .banner .swiper{ */
+    /* display: inline-block; */
+    /* position: relative; */
+/* } */
+#top .banner .swiper .control{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 40%;
+    height: 68px;
+
+    display: none;
+    /* background-color: #0f0; */
+}
+
+#top .banner .swiper .control i{
+    width: 34px;
+    height: 68px;
+    background-image: url(../img/icon1.png);
+}
+#top .banner .swiper .control .prev{
+    float: left;
+    margin-left: 164px;
+    background-position: -625px -68px;
+}
+
+#top .banner .swiper .control .next{
+    float: right;
+    background-position: -670px -67px;
+}
+
+/* 轮播图-按钮悬浮 */
+#top .banner .swiper:hover .control{
+    display: block;
+}
+#top .banner .swiper .control .prev:hover{
+    float: left;
+    margin-left: 164px;
+    background-position: -625px -153px;
+}
+#top .banner .swiper .control .next:hover{
+    float: right;
+    background-position: -670px -153px;
+}
+
+
+/* 轮播图-小圆点 */
+#top .banner .swiper .dots{
+    height: 100px;
+
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    right: 0;
+}
+#top .banner .swiper .dots .dot{
+    position: absolute;
+    left: 180px;
+    bottom: 10px;
+}
+#top .banner .swiper .dots .dot i{
+    position: relative;
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-right: 15px;
+}
+#top .banner .swiper .dots .dot i.active{
+    background-color: #ff1e32;
+}
+
+/* 轮播图-小圆点-悬浮 */
+#top .banner .swiper .dots .dot i:hover{
+    background-color: #ff1e32;
+}
+/* 轮播图-图片 */
+#top .banner .swiper img{
+    position: relative;
+    /* 向右移动父元素的一半 */
+    /* left: 50%; */
+    right:-50%;
+    /* 向左移动自己的一半 */
+    transform: translate(-50%);
+}
+
+/* 轮播图下面的服务*/
+#top .banner .service{
+    height: 45px;
+    line-height: 45px;
+    width: 100%;
+
+    position: absolute;/* 如果不设置宽度的话，这个块级元素会看不见 */
+    bottom: 0;
+
+    overflow: hidden;
+    color:#fff;
+    font-weight: 700;
+}
+
+/* 轮播图下的服务-毛玻璃效果 */
+#top .banner .service .blur{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+
+    background-color: rgba(0,0,0,.3);
+    filter: blur(20px);
+}
+
+/*轮播图服务-文字层叠变高 */
+#top .banner .service ul,
+#top .banner .service a{
+    position: relative;
+    z-index: 9;
+}
+
+#top .banner .service ul li{
+    float: left;
+    margin-right: 40px;
+}
+
+#top .banner .service a{
+    float: right;
+}
+
+#top .banner .service .wrap a{ 
+    color: #FFF;
+    
+}
+
+#top .banner .service img{ 
+    width: 20px;
+    height: 20px;
+    margin-right: 7px;
+}
+/* 服务下划线悬浮效果 */
+#top .banner .service .wrap a:hover{ 
+    text-decoration: underline;
+}
+
+#top .line{
+    height: 20px;
+}
+

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <style>
+        .phone{
+            position:relative;
+                        
+            /* 方便观察 */
+            margin-left: 200px;
+
+        }
+
+        .phone .code span{
+            display: block;
+            text-align: center;
+            margin-bottom: 3px;
+        }
+
+        .phone .code{
+            position:absolute;
+            top:20px;
+            /* left: -90px; */
+            transform: translate(-50%);
+            left: 50%; 
+
+            padding: 5px;
+            margin-top: 20px;
+          
+            border: 1px solid #ededed;
+
+            display: none;
+        }
+          
+        .title{
+            font-size: 14px;
+        }
+
+        .arrow{
+            position:absolute;
+            top: -6px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            /* transform: translate(-50%); */
+            /* left: 50%; */
+
+            width: 10px;
+            height: 10px;
+
+            border-top: 1px solid #ededed;
+            border-left: 1px solid #ededed;
+            
+            transform: rotate(45deg);
+            background-color: #fff;
+        }
+
+        .title:hover+.code{
+             display: block;
+        }
+
+        .title:hover{
+             color: #f00;
+        }
+
+    </style>
+</head>
+<body>
+    <a class="phone" href="#">
+        <span class="title">手机考拉</span>
+       
+        <span class="code">
+            <span class="arrow "></span>
+            <img src="../../img/考拉二维码.png">
+            <span>下载APP</span>
+            <span>领1000元新人礼包</span>
+        </span>
+    </a>
+    
+</body>
+</html>

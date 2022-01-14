@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <ul>
+    <li>知否知否，应是绿肥红瘦</li>
+    <li>不知不知，不知绿肥红瘦</li>
+    <li>加油加油，你不加油，别人就替你加油</li>
+    <li>别人就过你想过的人生</li>
+  </ul>
+  <ol id = "ol">
+    <li>生僻字</li>
+    <li>生僻字</li>
+    <li>生僻字</li>
+    <li>生僻字</li>
+  </ol>
+  <ol>
+    <li>fighting</li>
+  </ol>
+  <script>
+    // 1.获取过来是元素对象的集合，以伪数组的形式存储
+   var list = document.getElementsByTagName("li"); //父元素必须是指定的单个元素
+   console.log(list);
+  //  2.想打印里面的元素，可以使用遍历的方法
+  // for(var i = 0; i < list.length;i++){
+  //   console.log(list[i]);
+  // }
+  // 3.遍历对象也可以打印元素内容
+  for(k in list){
+    console.log(list[k]);
+  }
+  // 4.如果页面只有一个li，返回的还是伪数组的形式
+  // 5.如果没有元素，返回的就是一个空的伪数组
+
+
+  // 只获取ol里的li咋办？ element.getElementsByTagName()
+  var ol = document.getElementById("ol");
+  var lis = ol.getElementsByTagName("li");
+  console.log(lis);
+
+  
+
+  </script>
+</body>
+</html>

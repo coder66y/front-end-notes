@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // 超过2000的删除，剩余的放到新数组里
+    
+    var arr = [1500, 1200, 2000, 2100, 1800]
+    var newArr = [];
+    for(i = 0; i <= arr.length; i++) {
+      if (arr[i] < 2000) {
+        // newArr[newArr.length] = arr[i];
+        newArr.push(arr[i])
+      }
+    }
+    console.log(newArr);
+
+    // 数组翻转和数组排序
+    console.log(arr.reverse());
+
+    arr1 = [13, 4, 77, 1, 7]
+    arr1.sort(function(a, b){
+      // return a - b; // 升序
+         return b - a; // 降序
+    })
+    console.log(arr1); // 数组排序（冒泡排序）
+    
+
+
+
+  </script>
+</body>
+</html> 

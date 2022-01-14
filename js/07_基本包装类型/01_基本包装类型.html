@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var str = "andy";
+    console.log(str.length);
+    // 对象才有属性和方法 
+    // 为什么简单数据类型 str 也会有length属性？
+    // 基本包装类型： 就是把简单的数据类型包装成了复杂数据类型
+
+    // 1.把简单数据类型包装为复杂数据类型
+    var temp = new String("andy");
+    // 2.把临时变量的值给str
+    str = temp;
+    // 3.销毁这个临时变量
+    temp = null;
+
+    // 依旧使用indexOf() 来查找
+    var str = "改革春风吹满地，春风吹又生。"
+    console.log(str.indexOf("春")); // 2
+    console.log(str.indexOf("春", 3)); // 8 从索引号是3的位置开始查找 
+
+    
+    // // 案例 查找字符串"abcoefoxyozzoppo"中所有o出现的位置以及次数
+    // var str = "abcoefooxyozzoppooo";
+    // var i = str.indexOf("o");
+    // var num = 0;
+    // while(i > 0) {
+    //   console.log(i);
+    //   i = str.indexOf("o", i + 1)
+    //   num++;
+    // }
+    // console.log(num);
+
+    // 课后作业
+    var str = ['red', 'blue', 'red', 'green', 'pink', 'red'];
+    var index = str.indexOf('red');
+    // console.log(index);
+    var num = 0;
+    while(index >= 0) {
+      console.log(index);
+      index = str.indexOf('red', index + 1);
+      num++;
+    }
+    console.log("red出现的次数是:",num);
+
+  </script>
+</body>
+</html>

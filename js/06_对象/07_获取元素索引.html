@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // 返回数组索引号方法 indexof(数组元素) 作用返回数组元素的索引号
+    // 只返回第一个满足条件的索引号
+    var arr = ["red", "blue", "green", "pink", "blue"];
+    console.log(arr.indexOf("blue")); // 1
+    console.log(arr.indexOf("yellow")); // -1
+    // 从后面开始索引
+    console.log(arr.lastIndexOf("blue")); // 4 
+
+    // 案例 数组去重
+    var arr = ['c', 'a', 'z', 'a', 'x', 'a', 'x', 'c','b'];
+    var newArr = [];
+    for(i = 0; i < arr.length; i++) {
+      if (newArr.indexOf(arr[i]) < 0) {
+        newArr.push(arr[i]);
+      }
+    }
+
+    console.log(newArr);
+
+
+
+
+  </script>
+</body>
+</html>

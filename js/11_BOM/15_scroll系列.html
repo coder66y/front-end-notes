@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div{
+      width: 100px;
+      height: 100px;
+      background-color: pink;
+      border: 1px solid red ;
+
+      margin: 100px;
+      padding: 10px;
+      overflow:auto;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    我是内容我是内容我是内容我是内容
+    我是内容我是内容我是内容我是内容
+    我是内容我是内容我是内容我是内容
+    我是内容我是内容我是内容我是内容
+    我是内容我是内容我是内容我是内容
+    我是内容我是内容我是内容我是内容
+  </div>
+  <script>
+    let div = document.querySelector("div");
+    // 自身实际高度
+    console.log(div.scrollHeight); // 436
+    console.log(div.clientTop); // 1
+    console.log(div.clientHeight); // 120
+    div.addEventListener("scroll", function() {
+      console.log(div.scrollHeight); // 436
+      console.log(div.scrollTop); // 随着滚动变化
+      console.log(div.scrollLeft); // 0
+    })
+
+  </script>
+</body>
+</html>

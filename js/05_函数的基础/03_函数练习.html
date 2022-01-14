@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 计算矩形面积
+        function calcRectArea(width, height) {
+            return width * height;
+        }
+        var area1 = calcRectArea(20, 30);
+        console.log(area1);
+
+        // 计算圆的面积
+        function calcCircleArea(r){
+            const pai = 3.14;
+            return pai * r * r;
+        }
+        console.log(calcCircleArea(5));
+
+        // 传入一个n，计算1-n的和
+        function sum(n){
+            var total = 0;
+            for (var i = 1; i <= n; i++){
+                total +=i;
+            }
+            return total;
+        }
+        console.log(sum(100));
+
+        // 数组反转函数
+        function reverseArray(arr){
+            for (i = 0; i < arr.length / 2; i++){
+                temp = arr[i];
+                arr[i] = arr[arr.length-1-i];
+                arr[arr.length-1-i] = temp;
+            }
+            return arr;
+        }
+        var nums = [1, 2, 3, 4, 5, 6];
+        console.log(nums);
+        console.log(reverseArray(nums));
+
+        // 斐波拉契数列
+        function feibolacci(n){
+            var arr = [];
+            if (n <= 2){
+                arr[0] = 1;
+                arr[1] = 1;
+            }
+            else{
+                arr[0] = 1;
+                arr[1] = 1;
+                for( var i = 2; i < n; i++){
+                    arr[i] =arr[i-1] + arr[i-2];
+                }
+            }
+            return arr[n-1];
+        }
+        console.log(feibolacci(3));
+
+        // 利用函数的递归调用实现斐波拉契数列
+        // 在开发中避免使用递归
+        //   1、递归没有写好结束条件，意味着会无限调用
+        //    2.递归调用非常占据栈空间内存
+        function fib(n) {
+            if (n == 0|| n == 1){
+                return 1;
+            }
+            return fib(n - 1) + fib(n - 2);
+        }
+        console.log(fib(3));
+
+        
+
+
+    </script>
+</body>
+</html>

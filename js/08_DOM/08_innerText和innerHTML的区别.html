@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button class="btn1">66</button>
+  <button class="btn2">表情包</button><br>
+  <img class="phone" src="../../../图片可爱/夸我.gif" 
+  alt="" title="开始">
+
+  <script>
+    var btn1 = document.querySelector(".btn1");
+    var btn2 = document.querySelector(".btn2");
+    var phone = document.querySelector("img");
+    btn1.onclick = function() {
+      phone.src ="../../../图片可爱/太阳.gif";
+      phone.title = "66";
+    }
+    btn2.onclick = function() {
+      phone.src = "../../../图片可爱/欢迎.gif";
+      phone.title = "表情包";
+
+    }
+
+
+  </script>
+  
+</body>
+</html>

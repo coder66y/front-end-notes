@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      /* 交集选择器 */
+       p:nth-child(5){
+            color:blue;
+        }
+        /* p的第三个元素 */
+        /* nth-of-type与nth-child的语法一样  也有nth-last-of-type*/
+        p:nth-of-type(3){
+            color:red;
+        }
+        p:nth-last-of-type(-n+2){color:green;}
+
+        
+    </style>
+</head>
+<body>
+   
+        <p>文字内容1</p>
+        <p>文字内容2</p>
+        <span>span元素</span>
+        <p>文字内容3</p>
+        <p>文字内容4</p>
+        <p>文字内容5</p>
+        <p>文字内容6</p>
+        <p>文字内容7</p>
+        <p>文字内容8</p>
+   
+    <p> 
+        <span>span文字内容1</span>
+        <span>span文字内容2</span>
+        <span>span文字内容3</span>
+        <span>span文字内容4</span>
+        <span>span文字内容5</span>
+    </p>
+    <div>
+        <strong>strong文字内容1</strong><strong>strong文字内容2</strong><strong>strong文字内容3</strong><strong>strong文字内容4</strong>
+    </div>
+  
+</body>
+</html>

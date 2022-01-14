@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+/* div元素下的所有p元素(相当于所有后代，包含儿子和孙子) */
+        div p {color:red;}
+        /* div元素下的直接p元素(只有儿子，子代选择器）*/
+        div>p{color:blue;}
+    </style>
+</head>
+<body>
+    <div title="one div元素">我是div元素</div>
+   <div> 
+       <p title="p元素">我是p1元素</p>
+       <span>加油哟
+           <p>p2.666</p>
+       </span>
+        <p title="one-p">我是p元素</p>
+        <p>我也是p元素</p>
+        <span>我是span元素</span>
+    </div>
+</body>
+</html>

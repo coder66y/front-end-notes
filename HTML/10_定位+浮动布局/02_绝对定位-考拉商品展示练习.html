@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <style>
+        .beauty-left{
+            position: relative;
+            display: inline-block;
+        }
+
+        .beauty-left ul{
+           
+            position: absolute;
+            bottom: 10px;
+            width: 280px;
+            
+            text-align: justify;
+            text-align-last: justify;
+
+            /* 居中显示 */
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+
+
+           
+        }
+
+        .beauty-left ul li{
+            display: inline-block;
+            width: 80px;
+            height: 18px;
+            padding: 11px 0;
+            margin: 10px 0;
+            
+            font-size:12px;
+            color: #333;
+            background-color: #fff;
+
+            /* 覆盖父元素的justify */
+            text-align: center;
+            text-align-last: center;
+
+            border: 1px solid #ededed;
+            border-radius: 20px;
+            box-shadow: 0 0 0 1px rgba(0,0,0,.1);
+
+        }
+
+        .beauty-left ul li a:hover{
+            color:#ff1e32;
+        }
+    </style>
+    
+</head>
+<body>
+
+    <div class="beauty-left">
+        <a href="#">
+            <img src="../../img/考拉商品介绍.jpg" alt="_blank">
+        </a>
+        <ul>
+            <li><a href="#">大牌腕表</a></li>
+            <li><a href="#">流行配饰</a></li>
+            <li><a href="#">黄金珠宝</a></li>
+            <li><a href="#">眼镜烟具</a></li>
+            <li><a href="#">施华洛世奇</a></li>
+            <li><a href="#">DW</a></li>
+        </ul>
+
+    </div>
+</body>
+</html>

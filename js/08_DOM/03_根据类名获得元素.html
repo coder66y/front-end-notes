@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="name">陆一66呀1</div>
+  <div class="name">陆一66呀2</div>
+  <script>
+    // 1. getElementsByClassName("类名") 根据类名获取某些元素集合
+    var names = document.getElementsByClassName("name");
+    console.log(names);
+    // 遍历显示内容
+    for(k in names){
+      console.log(names[k]);
+    }
+
+    // 2.querySelector 返回指定选择器的第一个元素对象  H5新增的获取方式
+    // 切记里面的选择器必须要加符号
+    var firstBox = document.querySelector(".name");
+    console.log(firstBox);
+
+    var names = document.querySelectorAll(".name");
+    console.log(names);
+  </script>
+</body>
+</html>

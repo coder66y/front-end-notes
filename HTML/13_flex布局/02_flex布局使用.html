@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            display: flex;
+            align-content: flex-start;
+            /* flex-wrap: wrap; */
+
+            width: 960px;
+        }
+
+        .wrap1{
+            display: flex;
+            width: 510px;
+
+            flex-wrap: wrap;
+            align-content: flex-start;
+        }
+        .container{
+            width: 990px;
+            /* height: 306px; */
+
+            /* height: auto; */
+            background-color: #f00;
+
+            margin: 0 auto;
+        }
+
+        .item{
+            width: 240px;
+            background-color: #00f;
+
+            margin-right: 10px;
+        }
+
+        .itema{
+            height: 306px;
+        }
+
+        .itemb{
+            height: 148px;
+        }
+
+        .item-last{
+            margin-top: 10px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="wrap">
+            <div class="item itema"></div>
+            <div class="item itema"></div>
+            <div class="wrap1">
+                <div class="item itemb"></div>
+                <div class="item itemb ">1</div>
+                <div class="item itemb item-last"></div>
+                <div class="item itemb item-last">2</div>
+            </div>
+            
+        </div>  
+        <!-- <br clear="all">  -->
+        <!-- <div class="clear-fix"></div> -->     
+    </div>
+</body>
+</html>

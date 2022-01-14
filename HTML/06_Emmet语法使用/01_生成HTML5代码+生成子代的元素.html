@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 生成子代元素> -->
+    <!-- div>p>strong -->
+    <div>
+        <p>
+            <strong>
+
+            </strong>
+        </p>
+    </div>
+    <!-- 子代和兄弟同时+
+    Emmet:div>h2+a+p>span
+    -->
+    <div>
+        <h2></h2>
+        <a href=""></a>
+        <p>
+            <span>
+
+            </span>
+        </p>
+    </div>
+    <!-- 生成上一个层级的元素^: Emmet:div>h2+a^p>span-->
+    <div>
+        <h2></h2>
+        <a href=""></a>
+    </div>
+    <p>
+        <span>
+
+        </span>
+    </p>
+    <!-- 生成上上层级的元素：div>p>span^^h2+a或者(div>(p>span))+h2+a -->
+    <div>
+        <p><span></span></p>
+    </div>
+    <h2></h2>
+    <a href=""></a>
+    <!-- 生成元素的属性：生成id：div#main
+    生成class：div.box1
+    -->
+    <div id="main"></div>
+    <div class="box1"></div>
+    <!-- 生成有数字和内容的元素：div{div元素$}*4 -->
+    <div>div元素1</div>
+    <div>div元素2</div>
+    <div>div元素3</div>
+    <div>div元素4</div>
+     
+</body>
+
+</html>

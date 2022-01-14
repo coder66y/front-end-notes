@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 300px;
+            background-color: #f00;
+        }
+
+        .inner1{
+            float: left;
+
+            width: 80px;
+            height: 80px;
+
+            background-color: #00f;
+
+        }
+        .inner2{
+            /* float: left; */
+           /* display: inline-block; */
+
+            width: 100px;
+            height: 100px;
+
+            background-color: #0f0;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- 现象解释：
+            1.inner2进行左右浮动时，只会在自己的行内浮动
+            2.inner1左浮动，inner2没有浮动时，inner回发生层叠,inner1在2的上面
+            3.inner1进行左浮动，inner2没有浮动时，inner2内的文本会围绕inner1
+            4.inner1左浮动，inner2也左浮动时，两者在第一行依次排布
+            5.inner1和inner2都进行浮动，但是父元素没有设置行高，那么父元素高度会消失（高度的坍塌）
+              所以box设置不上背景
+              
+         -->
+    <div class="box">
+        <div class="inner1"></div>
+        <div class="inner2">哈哈哈哈哈</div>
+    </div>
+</body>
+</html>

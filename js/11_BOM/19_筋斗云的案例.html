@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    a{
+      text-decoration: none;
+      color: black;
+    }
+    .nav{
+      width: 800px;
+      margin: 100px auto;
+      position: relative;
+      /* background-color: #fff; */
+    }
+    ul,li{
+      list-style: none;
+
+      display: inline-block;
+      margin: 5px 10px;
+    }
+
+    .cloud{
+      position: absolute;
+      top: -30px;
+      left: -10px;
+      /* background: url(../../../图片可爱/云朵.png) no-repeat; */
+      height: 100px;
+      width: 120px;
+
+      z-index: -9;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="nav">
+    <img class="cloud" src="../../../图片可爱/云朵.png" alt="">
+    <ul>
+      <li class="active"><a href="#">首页新闻</a></li>
+      <li><a href="#">师资力量</a></li>
+      <li><a href="#">活动策划</a></li>
+      <li><a href="#">活动策划</a></li>
+      <li><a href="#">活动策划</a></li>
+      <li><a href="#">活动策划</a></li>
+      <li><a href="#">活动策划</a></li>
+      <li><a href="#">活动策划</a></li>
+    </ul>
+  </div>
+  <script src="../animate.js"></script>
+  <script>
+    let cloud = document.querySelector(".cloud");
+    // console.log(cloud);
+    let nav = document.querySelector(".nav");
+    let current = -10;
+    let lis = document.querySelectorAll("li");
+    // console.log(lis);
+
+    let flag = 0;
+    for(let i = 0; i < lis.length; i++) {
+      lis[i].addEventListener("mouseenter", function() {
+        animate(cloud, this.offsetLeft - 30);
+        this.children[0].style.color = "pink";
+        // console.log(this.offsetLeft);
+      })
+      lis[i].addEventListener("mouseleave", function() {
+        animate(cloud, current);
+        if(flag){
+          this.children[0].style.color = "#ff1e32";
+          flag = 0;
+        }else{
+          this.children[0].style.color = "#000";
+        }
+      })
+      lis[i].addEventListener("click", function() {
+        current = this.offsetLeft - 30;
+        for(let i = 0; i < lis.length; i++){
+          lis[i].children[0].style.color = "";
+        }
+        this.children[0].style.color = "#ff1e32";
+        flag = 1;
+      })
+    }
+  </script>
+</body>
+</html>

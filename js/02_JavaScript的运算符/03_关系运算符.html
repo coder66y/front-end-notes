@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num1 = 123;
+        var num2 = "123";
+
+        console.log(num1 == num2);// true
+        console.log(num1 === num2);// false ===必须类型相同，数据相等
+        console.log(num1 !== num2);// true
+
+        var flag1 = true;
+        var flag2 = "true";
+        // 隐式转换：都换成number再比较；
+        // flag1 -> 1;
+        // flag2 -> NaN;
+        console.log(flag1 == flag2);//false
+
+        
+
+
+    </script>
+</body>
+</html>

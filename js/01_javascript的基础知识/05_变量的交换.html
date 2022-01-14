@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1.两个变量之间的互相命名
+        var num11 = 20;
+        var num12 = num11;
+        console.log(num12);
+
+        // 2.两个变量值交换
+        var num1 = 100;
+        var num2 = 200;
+
+        // 交换方式1：利用临时变量
+        // change = num1;
+        // num1 = num2;
+        // num2 = change;
+
+        // console.log(num1,num2);
+
+        // 交换方式2：利用加减特性对他们进行交换
+        num1 = num1 + num2;
+        num2 = num1 - num2;
+        num1 = num1 - num2;
+
+        console.log(num1,num2);
+
+    </script>
+</body>
+</html>

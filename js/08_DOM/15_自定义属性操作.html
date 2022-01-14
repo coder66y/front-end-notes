@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="left" id="demo" index="l66">1234</div>
+  <script>
+    var div = document.querySelector("div");
+    var div = document.getElementsByTagName("div");
+    console.log(div.id)
+
+    // 1.获取元素属性值：
+    // 1.1 element.属性 获取的是元素自带的属性
+    console.log(div.id)
+    console.log(div.className);
+    // 1.2 element.getAttribute("属性"，“值”) 标准 这个可以获取自定义属性
+    console.log(div.getAttribute("id"));
+    console.log(div.getAttribute("class"));
+    // 以上两个是元素自带的属性，index是自定义的属性，要用getAttribute获得
+    console.log(div.getAttribute("index"));
+
+    // 2.设置元素属性值
+    // 2.1 element.属性 = “值”；
+    div.id = "lost";
+    console.log(div.getAttribute("id"));
+    // 2.1 element.setAttribute("属性"，“值”) 主要针对自定义属性
+    div.setAttribute("index","l77");
+    div.setAttribute("class","classRight");
+    console.log(div.getAttribute("class"));
+    console.log(div.getAttribute("index"));
+
+    // 3.移除属性
+    div.removeAttribute("index");
+  </script>
+</body>
+</html>

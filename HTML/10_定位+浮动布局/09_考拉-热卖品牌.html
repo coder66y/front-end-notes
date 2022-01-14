@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* reset.css */
+        h3{
+            margin: 0;
+            padding: 0;
+
+            width: 1099px;
+            height: 48px;
+            line-height: 48px;
+
+            text-indent: 20px;
+            font-size: 16px;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        /* 整体布局 */
+        .container{
+            width: 1100px;
+            
+            margin: 0 auto;
+        }
+
+        .wrap{
+            margin: 0 -1px 0 0;
+        }
+
+        a{
+            float: left;
+
+            width: 219px;
+            height: 167px;
+            line-height: 167px;
+
+            text-align: center;
+        }
+
+        h3,a{
+            border: 1px solid #eaeaea;
+        }
+
+        a{
+            position: relative;
+            border-left: none;
+            border-top: none;
+        }
+
+        a:nth-child(1){
+            border-left: 1px solid #eaeaea;
+        }
+
+        /* 悬浮效果 */
+        .love{
+            background-image: url(../../img/考拉爱心.png);
+
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+
+            position: absolute; 
+            right: 10px;
+            top: 10px;
+
+            display: none;
+        }
+
+        a:hover span .love{
+            display: inline-block;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>热卖品牌</h3>
+        <div class="wrap">
+            <a href="" class="pic">
+                <img src="../../img/考拉dw.jpg" alt="DW" target="_blank">
+                <span class="love"></span>
+            </a>
+            <a href="" class="pic">
+                <img src="../../img/考拉施华洛世奇.jpg" alt="施华洛世奇" target="_blank">
+                <span class="love"></span>
+            </a>
+            <a href="" class="pic">
+                <img src="../../img/考拉天梭.jpg" alt="天梭" target="_blank">
+                <span class="love"></span>
+            </a>
+            <a href="" class="pic">
+                <img src="../../img/考拉雷朋.jpg" alt="雷朋" target="_blank">
+                <span class="love"></span>
+            </a>
+            <a href="" class="pic">
+                <img src="../../img/考拉六福珠宝.jpg" alt="六福珠宝" target="_blank">
+                <span class="love"></span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

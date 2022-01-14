@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* reset */
+        body{
+            padding: 0;
+            margin: 0;
+        }
+
+        a{
+            text-decoration: none;
+            color: #333;
+        }
+
+        /* 具体样式，先整体在局部 */
+        .right-aside{
+            position: fixed;
+            top: 100px;
+            right: 30px;
+  
+            border:1px solid #eaeaea; 
+        }
+        /* a元素的边框 */
+        a{
+            display: block;
+            width: 62px;
+            height: 48px;
+            padding: 12px 0 0;
+            text-align: center;
+            font-size:12px;
+            
+            border-bottom:1px solid #eaeaea;
+        }
+
+        a.top{
+            border-bottom: none;
+        }
+
+        /* 图标设置 */
+        i{
+            display:block;
+            width: 20px;
+            height: 20px;
+            margin: 0 auto;
+            /* background-color: #0f0; */
+        }
+
+        i.resign{
+            background-image: url(../../img/考拉侧栏签到.png);
+        }
+        i.shopping{
+            background-image: url(../../img/考拉侧栏购物车.png);
+        }
+        i.app_icon{
+            background-image: url(../../img/考拉侧栏app.png);
+        }
+        i.top_icon{
+            background-image: url(../../img/考拉侧栏top.png);
+        }
+
+        /* 侧栏悬浮 */
+        .text{
+            display: none; 
+
+            position: absolute;
+            left: -130%;
+            bottom: 80%;
+
+            padding: 5px 10px;
+
+
+            border: 1px solid #eaeaea;
+            color: #333;
+        }
+        .resign:hover .text{
+            display: block;
+         } 
+
+        .arrow{
+            width: 8px;
+            height: 8px;
+            
+            position:absolute;
+            right: -7%;
+            bottom: 40%;
+
+            border-top: 1px solid #eaeaea;
+            border-right: 1px solid #eaeaea;
+            
+            transform: rotate(45deg);
+            background-color: #fff;
+        }
+
+        a:hover{
+            color:#ff1e32;
+            background-color: #eaeaea;
+        }
+
+        a:hover i.resign{
+            background-image: url(../../img/考拉侧栏签到红.png);
+        }
+        a:hover i.shopping{
+            background-image: url(../../img/考拉侧栏购物车红.png);
+        }
+        a:hover i.app_icon{
+            background-image: url(../../img/考拉侧栏APP红.png);
+        }
+        a:hover i.top_icon{
+            background-image: url(../../img/考拉侧栏top红.png);
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="right-aside">
+        <a href="#" class="resign">
+            <i class="resign"></i>
+            <span>签到</span>
+            <span class="text">
+                每日签到<br>
+                赢考拉豆
+                <span class="arrow"></span>
+            </span>
+            
+            
+        </a>
+        <a href="#">
+            <i class="shopping"></i>
+            <span>购物车</span>
+        </a>
+        <a href="#">
+            <i class="app_icon"></i>
+            <span>APP</span>
+        </a>
+        <a  class="top" href="#">
+            <i class="top_icon"></i>
+            <span>TOP</span>
+        </a>
+    </div>
+</body>
+</html>

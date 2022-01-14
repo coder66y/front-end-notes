@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    document.addEventListener("keydown",function(e) {
+      console.log("down:",e.key, e.keyCode);
+    
+      // 我们的keyup 和 keydown 不区分大小写 a 和 A 得到的都是65
+      // 我们的keypress 区分大小写 a 97 和 A 65
+    })
+    document.addEventListener("keypress",function(e) {
+      console.log("press:",e.key, e.keyCode);
+    })
+  </script>
+</body>
+</html>

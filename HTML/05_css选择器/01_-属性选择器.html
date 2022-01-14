@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 所有含有title的元素 */
+        [title]{
+            color:red;
+        }
+        /* 所有含有p的元素 */
+        [title*="one"]{
+            background-color:indigo;
+        }
+
+        /* 以one开头的元素 */
+        [title^="one"]{
+            font-size:32px;
+        }
+        /* 以one结尾的元素 */
+         [title$="one"]{
+             text-decoration: line-through;}
+         /* 名字是one或者以one开头，后面跟着连字符-的元素 */
+         [title|="one"]{
+             color:blue;
+         }
+    </style>
+</head>
+<body>
+    <div title="one div元素">我是div元素</div>
+    <p title="p元素">我是p元素</p>
+    <p title="one-p">我是p元素</p>
+    <p>我也是p元素</p>
+    <span title="one span元素 one">我是span元素</span>
+</body>
+</html>

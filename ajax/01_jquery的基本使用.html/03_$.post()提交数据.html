@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="../jQuery.min.js"></script>
+  <style>
+    div{
+      width: 100px;
+      height: 100px;
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+  <script>
+    $(function() {
+      $('div').on('click', function() {
+        $.post('http://www.liulongbin.top:3006/api/addbook',
+        {bookname: "啦啦啦德玛西亚", author: "草丛三剑客", publisher: "德玛西亚"},
+        function(e) {
+          console.log(e);
+        });
+      })
+
+      $('div').on('click', function() {
+        $.get('http://www.liulongbin.top:3006/api/getbooks', function(e) {
+          console.log(e);
+        });
+      })
+
+      $('div').on('click', function() {
+        $.get('http://www.liulongbin.top:3006/api/getbooks',{id: 531}, function(e) {
+          console.log(e);
+        });
+      })
+
+      $('')
+    })
+  </script>
+</body>
+</html>

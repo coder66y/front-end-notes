@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>莎莎的</title>
+    <link rel="icon" href="../../../毕业文件/pr.jpg">
+    <style>
+        table{
+            text-align:center;
+            border-collapse:collapse;
+
+        }
+        /* 单元格宽度 */
+        td{
+            width:200px;
+            height:45px;
+        }
+        /* 表头和标题设置 */
+        [colspan],thead>tr:nth-child(2){
+            font-weight:700;
+            color:black;
+            font-size:25px;
+            background-color: #fff;
+        }
+        /* 表头字体大小 */
+        thead>tr:nth-child(2){
+            font-size:19px;  
+        }
+        /* 13:15设置 */
+        span{
+            font-weight:700;
+        }
+        /* 15:00散场设置 */
+        span.time{
+            font-size:11px; 
+            font-weight:400;
+        }
+        /* 售价设置 */
+        td:nth-of-type(4){
+            color:red;
+            font-weight:700;
+        }
+        /* 选座购票设置 */
+       .choose{
+           color:white;
+           background-color: red;
+           border:8px solid red ;
+           font-weight:400;
+           border-radius: 10px;
+        }
+       /* 每行的颜色 */
+        tr:nth-child(2n+1){
+          background-color:rgba(255,0,0,0.1) 
+        }
+        tr:nth-child(2n){
+          background-color:rgba(0,0,0,0.1) 
+        }
+
+        .gb{
+          background-color: #ff1e32;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <!-- 表格名称 -->
+        <thead>
+          <tr>
+            <td colspan="5">影院放映列表</td>
+        </tr>
+        <tr>
+            <td>放映时间</td>
+            <td>语言版本</td>
+            <td>放映厅</td>
+            <td style="color:black">售价（元）</td>
+            <td>选座购票</td>
+        </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span >13:15</span><br><span class="time">15:00散场</span> </td>
+            <td>国语3D</td>
+            <td>2号厅</td>
+            <td>￥48.5</td>
+            <td><span class="choose">选座购票</span></td>
+        </tr>
+        <tr>
+            <td><span>13:15</span><br><span class="time">15:00散场</span></td>
+            <td>国语3D</td>
+            <td>2号厅</td>
+            <td>￥48.5</td>
+            <td><span class="choose">选座购票</span></td>
+        </tr>
+        <tr>
+            <td><span>13:15</span><br><span class="time">15:00散场</span></td>
+            <td>国语3D</td>
+            <td>2号厅</td>
+            <td>￥48.5</td>
+            <td><span class="choose">选座购票</span></td>
+        </tr>
+        <tr>
+            <td><span>13:15</span><br><span class="time">15:00散场</span> </td>
+            <td>国语3D</td>
+            <td>2号厅</td>
+            <td>￥48.5</td>
+            <td><span class="choose">选座购票</span></td>
+        </tr>
+        <tr>
+            <td><span>13:15</span><br><span class="time">15:00散场</span></td>
+            <td>国语3D</td>
+            <td>2号厅</td>
+            <td>￥48.5</td>
+            <td><span class="choose">选座购票</span></td>
+        </tr>
+
+        </tbody>
+       
+
+       <script>
+         var trs = document.querySelector("tbody").querySelectorAll("tr");
+         for (var i = 0; i < trs.length; i++) {
+          //  trs[i].onmouseover = function() {
+          //    this.style.backgroundColor = "rgba(255,0,0,0.3";
+          //  }
+          //  trs[i].onmouseout = function() {
+          //   this.style.backgroundColor = "";
+          //  }
+            trs[i].onmouseover = function() {
+              for (var i = 0; i < trs.length; i++) {
+                trs[i].style.backgroundColor = "";
+              }
+              this.style.backgroundColor = "rgba(255,0,0,0.3";
+            }
+          }
+       </script>
+      
+    </table>
+</body>
+</html>

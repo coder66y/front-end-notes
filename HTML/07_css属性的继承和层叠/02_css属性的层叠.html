@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 层叠，后面设置的属性值会把前面设置的属性值覆盖 */
+        .box1{
+            color:red;
+        }
+        .box2{
+            background-color:green;
+            color:rgb(204, 190, 165) ;
+        }
+        .box3{
+            width:300px;
+            height:300px;
+            line-height:300px;
+            text-align:center;
+            color:yellow;}
+        /* css属性的优先级：！important:10000 声明优先级
+        内联样式：1000
+        id选择器：100
+        类选择器、属性选择器、伪类：10 */
+    </style>
+</head>
+<body>
+    <div class="box1 box2 box3" style="color:red"> 哈哈哈哈 </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div>上午好</div>
+  <img src="../../../图片可爱/上午好.jpeg" alt="">
+  <script>
+    var div = document.querySelector("div");
+    var img = document.querySelector("img");
+    var time = new Date("2022-10-5 19:15");
+    // console.log(time);
+    var h = time.getHours();
+    // console.log(h);
+    if (h < 12) {
+      div.innerText = "亲，上午好";
+      img.src = "../../../图片可爱/上午好.jpeg";
+    }
+    else if(h <= 18) {
+      div.innerText = "亲，中午好";
+      img.src = "../../../图片可爱/太阳.gif";
+
+    }
+    else{
+      div.innerText = "亲，下午好";
+      img.src = "../../../图片可爱/下午好.webp";
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var str1 = "123";
+        var num1 = parseInt(str1);
+        console.log(num1, typeof num1); // 123 'number'
+
+        var str2 = "123.234";
+        var num2 = parseFloat(str2);
+        console.log(num2, typeof num2); // 123.234 'number'
+
+        var str3 = "abs123";
+        var num3 = parseFloat(str3);
+        console.log(num3, typeof num3); // NaN 'number'
+
+        var str31 = "123abs";
+        var num31 = parseFloat(str31);
+        console.log(num31, typeof num31); // 123 'number'
+
+        var str4 = "123";
+        var num4 = parseFloat(str4);
+        console.log(num4, typeof num4); // 123 'number'
+
+        var str5 = "123.556";
+        var num5 = parseInt(str5);
+        console.log(num5, typeof num5); // 123 'number'
+
+    </script>
+</body>
+</html>

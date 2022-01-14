@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var now = new Date();
+    console.log(now);//如果没有参数，就会返回当前系统的当前时间
+    week = ["天", "一", "二", "三", "四", "五", "六"]
+
+    console.log("今天是：", now.getFullYear() + "年" + now.getMonth() + 1 + "月" + now.getDate() + "日",
+    "星期" + week[now.getDay()]); // 周日返回的是0
+
+    // 要求封装一个函数，返回时分秒
+    function getTime(date) {
+      // var date = new Date();
+      var h = date.getHours();
+      var m = date.getMinutes();
+      var s = date.getSeconds();
+ 
+      return h + ":" + m + ":" + s;
+    }
+    console.log(getTime(now));
+
+    //获得date总的毫秒数
+    
+
+    // 参数常用写法 数字型 2019, 10, 01 或者是字符串类型 "2019-10-1 8:8:80"
+    var date1 = new Date(2019, 10, 01);
+    var date2 = new Date("2019-10-1 8:8:8");
+    console.log(date1);
+    console.log(date2);
+
+
+  </script>
+</body>
+</html>

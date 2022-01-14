@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var name = "why";
+
+        var score = prompt("小明，请输入你的分数");
+        console.log(score, typeof score);
+
+        if (score >= 90) {
+            console.log("分数超过90就去游乐场");
+        }
+
+        var price = 5;
+        var weight = prompt("请输入斤数")
+        var money = price * weight;
+        if (weight < 5) {
+            console.log("您需要支付:" + money + "元");
+        }
+        else {
+            money -= 8;
+            console.log("您需要支付:" + money + "元")
+        }
+    </script>
+</body>
+</html>

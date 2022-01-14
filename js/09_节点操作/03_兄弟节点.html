@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div>div元素</div>
+  <span>SPAN元素</span>
+
+  <script>
+    var div = document.querySelector("div");
+
+    // 打印他的下一个兄弟节点
+    console.log(div.nextSibling);//#text
+    // 打印下一个元素兄弟节点
+    console.log(div.nextElementSibling);// <span>SPAN元素</span>
+    // 打印上一个兄弟节点
+    console.log(div.previousSibling); // #text
+    // 打印上一个元素兄弟节点
+    console.log(div.previousElementSibling); // null
+
+    // i9以上才兼容
+
+  </script>
+</body>
+</html>

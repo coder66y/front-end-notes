@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .time{
+      display: inline-block;
+      color: #999;
+      font-size: 12px;
+      margin : 10px;
+    }
+  </style>
+</head>
+<body>
+  <textarea name="" id="" cols="30" rows="10"></textarea>
+  <button>发布</button>
+  <ul></ul>
+  <script>
+    var btn = document.querySelector("button");
+    var text = document.querySelector("textarea");
+    var ul = document.querySelector("ul");
+    var date = new Date();
+
+    btn.onclick = function(){
+      if(text.value == ""){
+        alert("您没有输入内容");
+      }
+      else{
+        // 1.创建元素
+        var li = document.createElement("li");
+        var time = document.createElement("p");
+        li.innerHTML = text.value;
+        time.innerHTML = date;
+        time.className = "time";
+
+
+        // 2.添加元素
+        // 2.1往后添加元素
+        // ul.appendChild(li);
+
+        // 2.2往前添加元素
+        // ul.insertBefore(time,ul.children[0])
+        ul.insertBefore(li,ul.children[0])
+        li.appendChild(time);
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .div1{
+      width: 200px;
+      height: 200px;
+      background-color: pink;
+
+      position: absolute;
+      left: 100px;
+      top: 0;
+      z-index: 9;
+    }
+
+    .div2{
+      width: 100px;
+      height: 100px;
+      background-color: purple;
+
+      position: absolute;
+      left: 100px;
+      top: 0;
+
+      z-index: 9;
+    }
+
+    input{
+      z-index: 99;
+    }
+  </style>
+</head>
+<body>
+  <button>点击</button>
+  <div class="div1"></div>
+  <div class="div2"></div>
+  <script>
+    let div1 = document.querySelector(".div1");
+    let div2 = document.querySelector(".div2");
+    let btn = document.querySelector("button");
+    // let timer = setInterval(function(){
+    //   if(div.offsetLeft >= 700 || div.offsetTop >= 700) {
+    //     clearInterval(timer);
+    //   }
+    //   else{
+    //     div.style.left = div.offsetLeft + 5 + "px";
+    //     div.style.top = div.offsetTop + 5 + "px"; 
+    //   }
+    // },30);
+
+    // let obj = {};
+    // obj.name = "andy0";
+    // 简单动画函数封装obj目标对象 target 目标位置
+    // 给不同的元素指定不同的定时器
+
+    function animate(obj, target) {
+        clearInterval(obj.timer);
+        obj.timer = setInterval(function(){
+        if(obj.offsetLeft >= 700 || obj.offsetTop >= target) {
+          clearInterval(obj.timer);
+        }
+        else{
+          obj.style.left = obj.offsetLeft + 5 + "px";
+          obj.style.top = obj.offsetTop + 5 + "px"; 
+        }
+      },30);
+    }
+
+    // 不断点击按钮，速度会越来越快
+    // 解决方法是：让元素只有一个定时器执行
+
+    btn.addEventListener("click", function() {
+      animate(div1, 500);
+    })
+    animate(div2, 300);
+
+  </script>
+</body>
+</html>

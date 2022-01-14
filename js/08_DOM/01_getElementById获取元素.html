@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="time">2022-1-3</div>
+  <script>
+    // 1.文档是从上往下加载，所以必须先有标签
+    // 2.驼峰命名法
+    // 3.参数id是大小写铭感的字符串
+    // 4.返回的是一个元素对象
+    var timer = document.getElementById("time");
+    console.log(timer);
+    console.log(typeof timer); // object
+
+    // console.dir()打印返回的对象，更好的查看里面的方法和属性
+    console.dir(timer);
+
+    
+  </script>
+</body>
+</html>

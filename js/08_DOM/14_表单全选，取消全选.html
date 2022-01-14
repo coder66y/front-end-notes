@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    td,th{
+      outline: 0.5px solid #999;
+      border-collapse: collapse;
+      width: 100px;
+      text-align: center;
+    }
+    thead{
+      background-color: rgba(20,25,255,0.5);
+      color: #fff;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>
+            <input type="checkbox" id="tb_h">
+          </th>
+          <th>商品</th>
+          <th>价钱</th>
+        </tr>
+      </thead >
+      <tbody id="tb">
+        <tr>
+          <td>
+            <input type="checkbox">
+          </td>
+          <td>iphone11</td>
+          <td>8099</td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox">
+          </td>
+          <td>iphone8</td>
+          <td>8000</td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox">
+          </td>
+          <td>iphone6</td>
+          <td>6000</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <script>
+    // 获取元素
+    var tb_h = document.getElementById("tb_h");//全选按钮
+    var tb = document.getElementById("tb").getElementsByTagName("input"); //下面所有的复选框
+
+    // 注册事件
+    tb_h.onclick = function() {
+      // this.checked 可以得到当前复选框的选中状态，如果是TURE,就是选中，如果不是，就是false
+      // 1.让下面的复选框跟随全选的复选框
+      for(var i = 0; i < tb.length; i++) {
+        tb[i].checked = this.checked;
+      }
+    }
+
+    // 2.下面的复选框全部选中，上面全选才可以选中
+    
+    // for(var i = 0; i < tb.length; i++) {
+    //   tb[i].onclick = function() {
+    //     var flag = true;
+    //     for(var i = 0; i < tb.length; i++) {
+    //       if(tb[i].checked == false) {
+    //         flag = false;
+    //       }
+    //     }
+    //     tb_h.checked = flag;
+    //   }
+    // }
+    for(var i = 0; i < tb.length; i++) {
+      tb[i].onclick = function() {
+        tb_h.checked = true;
+        for(var j = 0; j < tb.length; j++) {
+          if(!tb[j].checked) {
+            tb_h.checked = false;
+            break;//提高循环执行的效率
+          }
+        }
+      }
+    }
+  </script>
+</body>
+</html>

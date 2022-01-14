@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>66's</title>
+    <!-- 样式的重置 -->
+    <style>
+         ul{
+             list-style:none;
+             padding: 0;
+             margin: 0;
+         }
+
+         a{
+             text-decoration: none;
+             color:#3951B3;
+         }
+
+         /* 局部样式 */
+         .page ul li {
+             display: inline-block;
+         } 
+
+         /* 边框宽高 */
+         .page ul li a{
+             display: inline-block;
+             width: 34px;
+             height: 34px;
+             border:1px solid #e1e2e3;
+             text-align:center;
+             line-height: 34px;
+             font-size:14px;
+         }
+         /* 悬浮效果 */
+         .page ul li a:hover{
+            border:1px solid #38f;
+            background-color:#f2f8ff;
+         }
+         /* 第一页和最后一页 */
+         .page .prev a,.page .next a{
+            width: 80px;
+             height: 34px;
+         }
+        /* 选中页面效果 */
+         .page .active{
+             width: 36px;
+             height: 36px;
+             line-height: 36px;
+             border:none;
+             font-weight: 700;
+             color:#000;
+         }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <ul>
+            <li class="prev"><a href="#">&lt;上一页</a></li>
+           <li><a href="#">1</a></li>
+           <li><a class="active" href="#">2</a></li>
+           <li><a href="#">3</a></li>
+           <li><a href="#">4</a></li>
+           <li><a href="#">5</a></li>
+           <li><a href="#">6</a></li>
+           <li><a href="#">7</a></li>
+           <li><a href="#">8</a></li>
+           <li><a href="#">9</a></li>
+           <li><a href="#">10</a></li>
+            <li class="next"><a href="#">下一页&gt;</a></li>
+        </ul>
+    </div>
+</body>
+</html>

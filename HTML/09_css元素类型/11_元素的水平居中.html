@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 200px;
+            background-color: #f00;
+            /* 设置内容居中 */
+            text-align: center; 
+            
+        }
+        .inner{
+            /* display:inline-block; */
+            width: 100px;
+            height: 100px;
+            background-color: #fff;
+            /* 设置盒子居中 */
+            /* 没有以下设置时：只有span居中 */
+             margin:0 auto; 
+        }
+        strong{
+            background-color: #0f0;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <!-- 1.普通文本 -->
+        <!-- 行内元素 -->
+        <!-- 2.行内元素 -->
+        <!-- <strong> -->
+          <!-- 我是strong元素 -->
+        <!-- </strong> -->
+        <!-- 3.图片：行内替换元素 -->
+        <!-- <img src="../../O1CN01lm4jkI2MLwtfXnWkO_!!0-saturn_solar.jpg_468x468q75.jpg_.webp"> -->
+        <!-- 4.行内块级元素 -->
+        <!-- 盒子里的内容也居中了，继承自父元素的text-align: center;-->
+        <div class="inner">hahahah</div>
+        <span>span元素</span>
+    </div>
+</body>
+</html>

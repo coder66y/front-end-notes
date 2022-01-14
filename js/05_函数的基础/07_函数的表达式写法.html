@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // 1.定义方式一：函数的声明写法
+    function test() {
+
+    }
+    test();
+    
+
+    // 2.定义方式二：函数表达式
+    
+    //  2.1命名函数表达式
+    var abc1 = function test() {
+      console.log("test函数被调用");
+    }
+    abc1();
+
+    // 2.1匿名函数表达式
+    var abc2 = function() {
+      console.log("匿名函数被调用");
+    }
+    abc2();
+
+    // 函数都有属性 name
+    console.log(test.name);
+    console.log(abc1.name);
+    console.log(abc2.name);
+
+
+  </script>
+</body>
+</html>

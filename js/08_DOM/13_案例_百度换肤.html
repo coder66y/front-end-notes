@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    ul,li {
+      margin: 0 ;
+      padding: 0;  
+    }
+
+    body{
+      background: url(../../笔记/js/bom/img/百度换肤/boniu.jpg) no-repeat center top;
+      background-size: 100%;
+    }
+
+    ul {
+      width: 450px;
+      /* padding-top: 3px; */
+      margin: 100px auto;
+      background-color: #fff;
+
+      display: flex;
+      justify-content: space-evenly;
+      
+    }
+
+    li{
+      display: inline-block;
+      list-style-type: none;
+    }
+    ul li img {
+      width: 100px;
+      vertical-align: middle; 
+      padding: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li><img src="../../笔记/js/bom/img/百度换肤/boniu.jpg" alt=""></li>
+    <li><img src="../../笔记/js/bom/img/百度换肤/微信图片_20220104112617.jpg" alt=""></li>
+    <li><img src="../../笔记/js/bom/img/百度换肤/微信图片_20220104112624.jpg" alt=""></li>
+    <li><img src="../../笔记/js/bom/img/百度换肤/微信图片_20220104112636.jpg" alt=""></li>
+  </ul>
+  <script>
+    var lis = document.querySelector("ul").querySelectorAll("img");
+    var body = document.body;
+    for (var i = 0; i < lis.length; i++) {
+      lis[i].onclick = function(){
+        body.style.backgroundImage = "url("+ this.src +")";
+        for(var i = 0; i < lis.length; i++){
+          lis[i].style.transform = "scale(1)";
+          }
+        this.style.transform = "scale(1.1)";
+      }
+    }
+  </script>
+</body>
+</html>

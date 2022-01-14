@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input type="button" value="点击">
+  <div></div>
+  <script>
+    let btn = document.querySelector("input");
+    let div = document.querySelector("div");
+    let time = 5;
+    let timer = null;
+
+    // function countDown(){
+    //   if(time == 0){
+    //     location.href = "http://www.baidu.com";
+    //     time = 5;
+    //   }
+    //   else{
+    //     div.innerHTML = "您将在" + time + "秒钟后跳转页面";
+    //     time--;
+    //   }
+    // }
+
+    // btn.addEventListener("click", function (){
+    //   countDown(); // 先调用函数，这样的话就不会有页面空白
+    //   setInterval(countDown, 1000);
+    // })
+
+    // 这个需要反应一会儿
+    btn.addEventListener("click", function (){
+      timer = setInterval(function() {
+        if(time == 0){
+          location.href = "http://www.baidu.com";
+          clearInterval(timer);
+          time = 5;
+        }
+        else{
+          div.innerHTML = "您将在" + time + "秒钟后跳转页面";
+          time--;
+        }
+      }, 1000);
+    })
+  </script>
+</body>
+</html>

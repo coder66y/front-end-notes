@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+   <script>
+    //  window.setTimeout(调用函数，延长时间）;
+    // window在写的时候可以省略，延长时间为毫秒，可以省略，如果省略，默认为“0”
+    // 页面中可能有很多定时器，所以会给每个定时器开名字
+    // 1.写法一
+    setTimeout(function() {
+      console.log("时间到了");
+
+    }, 2000);
+
+    // 2.写法二
+    function callback(){
+      console.log("爆炸啦");
+    };
+
+    let timer1 = setTimeout(callback, 3000);
+
+    // 3.写法三
+    let timer2 = setTimeout('callback()', 4000);// 字符串的形式 不推荐
+   </script>
+</body>
+</html>

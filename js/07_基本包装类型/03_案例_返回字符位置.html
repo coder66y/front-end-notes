@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // 案例 判断字符串"abcoefoxyozzoppo"中出现最多的字符，并统计次数
+    // 第一步，写到对象里面
+    var str = "abcoefoxyozzoppo";
+    var o = {};
+    for(var i = 0; i < str.length; i++) {
+      var chars = str.charAt(i);
+      // 注意：o[chars]： o["chars"]和o.chars不一样
+      // 第一个指o对象里面的全部属性
+      // 第二个和第三个指o对象里面的chars属性
+
+      if (o[chars]) {
+        o[chars]++;
+
+      } 
+      else{
+        o[chars] = 1;
+      }
+    }
+    console.log(o);
+    // 第二步，遍历对象
+    var max = 0;
+    var ch = "";
+    for(var k in o){
+      if (max <= o[k]){
+        max = o[k];
+        ch = k;
+      }
+    }
+    console.log(max);
+    console.log("最多的字符是："+ch);
+  </script>
+</body>
+</html>

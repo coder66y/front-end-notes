@@ -2,15 +2,15 @@
 
 ## 1、什么是BOM？
 
-![](img\什么是BOM.png)
+![](img/什么是BOM.png)
 
 ## 2.BOM的构成
 
 
 
-![](img\bom构成.png)
+![](img/bom构成.png)
 
-![bom构成2](img\bom构成2.png)
+![bom构成2](img/bom构成2.png)
 
 # 二、BOM常见事件
 
@@ -60,7 +60,7 @@
 
 ### 1.1setTimeout()
 
-![](img\setTimeout定时器.png)
+![](img/setTimeout定时器.png)
 
 ```html
    <script>
@@ -127,7 +127,7 @@
 
 clearTimeout(计时器名字);
 
-![](img\停止setInterval定时器.png)
+![](img/停止setInterval定时器.png)
 
 ```html
   <input type="button" value="清除定时器">
@@ -150,7 +150,7 @@ clearTimeout(计时器名字);
 -   页面中可能有很多定时器，所以会给每个定时器开名字,用来区别不同的定时器
 -   setTimeout() 延迟时间到啦 就去调用这个函数 只调用一次 就结束了这个定时器
 -   setInterval() 每个这个延迟时间，就会调用一次，所以会不断重复调用
-- ![](img\setInterval定时器.png)
+- ![](img/setInterval定时器.png)
 
 #### 1.2.1案例 --jd秒杀倒计时
 
@@ -259,19 +259,19 @@ clearTimeout(计时器名字);
 
 ## 1.js是单线程
 
-![](img\js是单线程.png)
+![](img/js是单线程.png)
 
 ## 2.同步和异步
 
-![](img\同步和异步.jpg)
+![](img/同步和异步.jpg)
 
-![同步和异步2](img\同步和异步2.png)
+![同步和异步2](img/同步和异步2.png)
 
 ## 3.执行机制
 
-![](img\js执行机制.png)
+![](img/js执行机制.png)
 
-![](img\js执行机制2.png)
+![](img/js执行机制2.png)
 
 # 五、location对象
 
@@ -281,11 +281,11 @@ window对象给我们提供了一个**location属性**用于**获取或者设置
 
 ## 2.URL
 
-![](img\URL.png)
+![](img/URL.png)
 
 ## 3.location对象的属性
 
-![](img\location对象的属性.png)
+![](img/location对象的属性.png)
 
 ### 3.1案例---倒计时跳转页面  获取页面href地址
 
@@ -346,12 +346,12 @@ window对象给我们提供了一个**location属性**用于**获取或者设置
 
 ## 4.location对象的方法
 
-![](img\location对象的方法.png)
+![](img/location对象的方法.png)
 
 # 六、navigator对象
 
-![](img\navagator对象.png)
+![](img/navagator对象.png)
 
 # 七、history对象
 
-![](img\history对象.png)
+![](img/history对象.png)

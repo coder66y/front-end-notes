@@ -2,7 +2,7 @@
 
 ## 1、新增语义化
 
-![](截图、\语义化元素.PNG)
+![](截图、/语义化元素.PNG)
 
 
 
@@ -10,15 +10,15 @@
 
 ### video
 
-![](截图、\video.PNG)
+![](截图、/video.PNG)
 
 ### audio
 
-![](截图、\audio.PNG)
+![](截图、/audio.PNG)
 
 ### input元素扩展
 
-<img src="截图、\input元素拓展.PNG" style="zoom:25%;" />
+<img src="截图、/input元素拓展.PNG" style="zoom:25%;" />
 
 # 二、flex布局
 
@@ -26,29 +26,29 @@
 
 
 
-<img src="截图、\flex布局/flex布局模型.PNG" alt="flex布局模型" style="zoom:25%;" />
+<img src="截图、/flex布局/flex布局模型.PNG" alt="flex布局模型" style="zoom:25%;" />
 
 ## 2、flex相关的属性
 
-<img src="截图、\flex布局/flex相关属性.PNG" alt="flex相关属性" style="zoom:25%;" />
+<img src="截图、/flex布局/flex相关属性.PNG" alt="flex相关属性" style="zoom:25%;" />
 
 ## 3、flex-container相关
 
 * ##### flex-direction（决定主轴的方向）
 
-​                                                                  <img src="截图、\flex布局/flex-directin.PNG" style="zoom:25%;" /> 
+​                                                                  <img src="截图、/flex布局/flex-directin.PNG" style="zoom:25%;" /> 
 
 * ##### justify-content（决定主轴上flex items如何排布）
 
-  <img src="截图、\flex布局\justify-content.PNG" style="zoom:25%;" />
+  <img src="截图、/flex布局/justify-content.PNG" style="zoom:25%;" />
 
 * ##### align-items（决定flex-items在交叉轴上的对齐方式）
 
-  <img src="截图、\flex布局\align-items.PNG" style="zoom:25%;" />
+  <img src="截图、/flex布局/align-items.PNG" style="zoom:25%;" />
 
 * #####  align-content（决定交叉轴上flex items如何排布）
 
-  <img src="截图、\flex布局\align-content.PNG" style="zoom:25%;" />
+  <img src="截图、/flex布局/align-content.PNG" style="zoom:25%;" />
 
 * ##### flex-wrap
 
@@ -97,7 +97,7 @@
 
 * ### flex-grow
 
-  <img src="截图、\flex布局\flex-grow.PNG" style="zoom:25%;" />
+  <img src="截图、/flex布局/flex-grow.PNG" style="zoom:25%;" />
 
   所有的flex-grow加起来大于1，则包含块的剩余部分全部分给每个items,小于1,可能分不完。
 
@@ -105,11 +105,11 @@
 
   默认情况下，如果items没有设置可以换行，就会收缩。
 
-  <img src="截图、\flex布局\flex-shrink.PNG" style="zoom:25%;" />
+  <img src="截图、/flex布局/flex-shrink.PNG" style="zoom:25%;" />
 
 * ### flex-basis
 
-  <img src="截图、\flex布局\flex-basis.PNG" style="zoom:25%;" />
+  <img src="截图、/flex布局/flex-basis.PNG" style="zoom:25%;" />
 
 * ### flex
 

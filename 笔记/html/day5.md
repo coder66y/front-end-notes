@@ -65,11 +65,8 @@ css中有些属性是可继承的，一些元素如果没有设置某属性的�
 ### 4.列表相关css属性
 
 * list-style-type(none用的比较多)
-* 
 
-<img src="F:\前端\笔记/image-20211130154033168.png" alt="image-20211130154033168" style="zoom:25%;" />
-
-
+![](image-20211130154033168.png)
 
 
 
@@ -120,9 +117,9 @@ th:表格表头的单元格
 * checked只用在radio和CheckBox里面
 * 其他的要实现默认选项要用selected
 
-<img src="F:\前端\笔记\type属性.PNG" style="zoom:25%;" />    
+<img src="type属性.PNG" style="zoom:25%;" />    
 
-<img src="F:\前端\笔记\布尔属性.PNG" style="zoom:25%;" />
+<img src="布尔属性.PNG" style="zoom:25%;" />
 
 * ### input的外边框outline
 
@@ -434,11 +431,11 @@ fieldset的标题
 
 由于浏览器和服务器对URL长度有限制，因此在URL后面附带的参数是有限制的，通常不能超过1kb 
 
-<img src="截图、\get请求.PNG" style="zoom:25%;" />
+<img src="截图、/get请求.PNG" style="zoom:25%;" />
 
 #### 10.2、post
 
-<img src="截图、\post请求.PNG" alt="post请求" style="zoom:25%;" />
+<img src="截图、/post请求.PNG" alt="post请求" style="zoom:25%;" />
 
 ### 11、form常用属性
 
@@ -466,7 +463,7 @@ fieldset的标题
 
 比如：div/p/h1-h6/ul等
 
-<img src="截图、\元素的分类总结.PNG" style="zoom:25%;" />
+<img src="截图、/元素的分类总结.PNG" style="zoom:25%;" />
 
 
 

@@ -2,13 +2,13 @@
 
 ## 1、注册事件概述
 
-![](img\注册事件概述.png)
+![](img/注册事件概述.png)
 
 ## 2、事件监听方式
 
-<img src="img\addEventListener监听方式.png" style="zoom:150%;" />
+<img src="img/addEventListener监听方式.png" style="zoom:150%;" />
 
-![](img\addEvent监听方式.png)
+![](img/addEvent监听方式.png)
 
 ```html
   <button>传统注册方式</button>
@@ -64,9 +64,9 @@
 
 # 三、事件流理论
 
-![](img\dom事件流.png)
+![](img/dom事件流.png)
 
-![](img\dom事件流1.png)
+![](img/dom事件流1.png)
 
 ```html
   <div class="father">
@@ -92,13 +92,13 @@
   </script>
 ```
 
-![](img\dom事件流2.jpg)
+![](img/dom事件流2.jpg)
 
 # 四、事件对象
 
 ## 4.1什么是事件对象
 
-![](img\鼠标对象事件.png)
+![](img/鼠标对象事件.png)
 
 ```html
   <div>123</div>
@@ -123,7 +123,7 @@
 
 ## 4.2常见事件对象的属性和方法
 
-![](img\事件对象的常见属性和方法.png)
+![](img/事件对象的常见属性和方法.png)
 
 ```html
   <div>123</div>
@@ -160,7 +160,7 @@
 
 ### 阻止事件冒泡的方法
 
-![](img\防止事件冒泡的兼容性方案.png)
+![](img/防止事件冒泡的兼容性方案.png)
 
 ```html
   <div class="father">
@@ -187,7 +187,7 @@
 
 # 五、事件委托
 
-![](img\事件委托.png)
+![](img/事件委托.png)
 
 ```html
   <ul>
@@ -212,7 +212,7 @@
 
 # 六、常见鼠标事件
 
-![](img\常见鼠标事件.png)
+![](img/常见鼠标事件.png)
 
 ## 6.1禁止鼠标右键使用和选中文字
 
@@ -233,7 +233,7 @@
 
 ## 6.2鼠标事件对象
 
-<img src="img\鼠标对象事件.png"/>
+<img src="img/鼠标对象事件.png"/>
 
 ```html
   <br><br><br><br><br><br><br><br>
@@ -290,7 +290,7 @@
 
 ## 6.1常用键盘事件
 
-<img src="img\常用键盘事件.png"/>
+<img src="img/常用键盘事件.png"/>
 
 ```html
   <script>

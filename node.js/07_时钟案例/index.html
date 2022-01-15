@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>时钟</title>
+  <style>
+    html,
+    body{
+      margin: 0;
+      padding: 0;
+      height: 100%;
+
+      background-image: linear-gradient(to bottom right, red, gold);
+    }
+
+    .box{
+      width: 400px;
+      height: 250px;
+
+      background-color: rgba(255, 255, 255, .6);
+
+      margin: 100px auto;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+
+      border-radius: 25px;
+      box-shadow: 0 0 10px #fff;
+    }
+
+    .box>div{
+      display: inline-block;
+
+      width: 60px;
+      height: 100px;
+      line-height: 100px;
+
+      text-align: center;
+      font-size: 40px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+      text-shadow: 0 0 10px rgba(255, 255, 255 );
+
+    }
+
+    /* 盒子投影 */
+    /* -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent),color-stop(0%, transparent), to( rgba(250, 250, 250))); */
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div id="HH">00</div>
+    <div>:</div>
+    <div id="MM">00</div>
+    <div>:</div>
+    <div id="SS">00</div>
+  </div>
+
+  <script>
+    let H = document.querySelector("#HH");
+    let M = document.querySelector("#MM");
+    let S = document.querySelector("#SS");
+
+    function time() {
+      let dt = new Date();
+      let HH = dt.getHours();
+      HH = HH < 10 ? '0' + HH :  HH;
+      let MM = dt.getMinutes();
+      MM = MM < 10 ? '0' + MM :  MM;
+      let SS = dt.getSeconds();
+      SS = SS < 10 ? '0' + SS :  SS;
+
+      H.innerHTML = HH;
+      M.innerHTML = MM;
+      S.innerHTML = SS;
+    }
+
+    time();
+    setInterval("time()",1000);
+  </script>
+</body>
+</html>

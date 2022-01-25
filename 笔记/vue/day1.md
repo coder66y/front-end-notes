@@ -22,7 +22,7 @@ webpack
 
 parcel
 
-### 3.什么是webpack
+## 3.什么是webpack
 
 **概念**：前端工程化的一个解决方案
 
@@ -32,3 +32,12 @@ parcel
 
 目前Vue react 等前端项目都是基于webpack进行的工程化开发
 
+## 4.创建列表隔行变色项目
+
+### 4.1安装 webpack
+
+```powershell
+npm i webpack webpack-cli -D
+```
+
+### 4.2 配置 webpack

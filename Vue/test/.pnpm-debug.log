@@ -1,0 +1,47 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "test",
+      "version": "1.0.0",
+      "description": "",
+      "main": "index.js",
+      "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+      },
+      "keywords": [],
+      "author": "",
+      "license": "ISC"
+    },
+    "prefix": "F:\\前端\\Vue\\test"
+  },
+  "2 debug pnpm:context": {
+    "currentLockfileExists": false,
+    "storeDir": "C:\\Users\\asus\\.pnpm-store\\v3",
+    "virtualStoreDir": "F:\\前端\\Vue\\test\\node_modules\\.pnpm"
+  },
+  "3 debug pnpm:stage": {
+    "prefix": "F:\\前端\\Vue\\test",
+    "stage": "resolution_started"
+  },
+  "4 error pnpm": {
+    "code": "ERR_PNPM_FETCH_404",
+    "hint": "webapck-cli is not in the npm registry, or you have no permission to fetch it.\n\nNo authorization header was set for the request.",
+    "request": {
+      "url": "https://registry.npmmirror.com/webapck-cli"
+    },
+    "response": {
+      "size": 0
+    },
+    "pkgName": "webapck-cli",
+    "pkgsStack": [],
+    "err": {
+      "name": "pnpm",
+      "message": "GET https://registry.npmmirror.com/webapck-cli: Not Found - 404",
+      "code": "ERR_PNPM_FETCH_404",
+      "stack": "pnpm: GET https://registry.npmmirror.com/webapck-cli: Not Found - 404\n    at RetryOperation._fn (C:\\Users\\asus\\AppData\\Roaming\\npm\\pnpm-global\\5\\node_modules\\.pnpm\\pnpm@6.28.0\\node_modules\\pnpm\\dist\\pnpm.cjs:85471:19)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"
+    }
+  }
+}

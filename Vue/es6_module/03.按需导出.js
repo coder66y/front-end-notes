@@ -1,0 +1,8 @@
+export let s1 = 'aaa';
+export let s2 = 'ccc';
+export function say() {};
+
+export default {
+  s2, 
+  say,
+}

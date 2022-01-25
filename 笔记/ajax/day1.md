@@ -299,6 +299,13 @@ git仓库
 
 ### 6.1 配置用户信息
 
+```powershell
+git config --global user.name "coder66y"
+git config --global user.email "2160360887@qq.com"
+```
+
+
+
 ### 6.2 git全局配置文件
 
 * 在c盘   用户  .gitconfig 里面 ，可以用记事本打开 查看自己设置过哪些全局对象

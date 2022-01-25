@@ -1,0 +1,479 @@
+# 一、http模块
+
+## 1.定义
+
+http模块是Node.js官方提供的，用来创建web服务器的模块，通过http模块提供http.createServer()方法，就可以方便把一台普通电脑，变成一台web服务器，对外提供web资源服务
+
+如果希望使用http模块，需要导入它
+
+```js
+const http = require('http');
+```
+
+## 2.作用
+
+通过http模块提供http.createServer()方法，把一台普通电脑，变成一台web服务器，对外提供web资源服务，相当于一个服务器软件
+
+## 3.服务器相关概念
+
+### 3.1 IP地址
+
+**IP地址**是互联网上每台计算机的唯一地址，因此IP地址具有唯一性，只有知道对方的IP地址的前提下，才可以进行数据通信
+
+**IP地址格式**通常用 “点分十进制” 表示成（a.b.c.d)的形式，其中abcd都是0-255之前的十进制整数。例如： 192.168.1.1
+
+每台web服务器都有自己的IP地址，在终端中输入： ping  www.baidu.com 可以查看百度服务器地址
+
+### 3.2 域名和域名服务器
+
+![](img/域名和域名服务器.png)
+
+### 3.3 端口号
+
+![](img/端口号.png)
+
+## 4.创建最基本的web服务器
+
+### 4.1 导入http模块
+
+![](img/http模块作用.png)
+
+```js
+const http = require('http');
+```
+
+### 4.2 创建web服务器实例
+
+```js
+const server = http.createServer();
+```
+
+### 4.3 为服务器实例绑定request事件
+
+```js
+server.on('request', function(req, res) {
+  console.log('Some one visit our web server');
+})
+```
+
+为服务器实例绑定request事件，即可监听由客户端发来的网络请求
+
+#### 4.3.1 req请求对象
+
+只要服务器接收到了客户端的请求，就会调用通过server.on() 为服务端绑定的request事件处理函数。
+
+如果想在事件处理函数中，访问与客户端有关的数据和属性，就可以使用如下方法。
+
+#### 4.3.2  res响应对象
+
+在服务器的 request 事件处理函数中，如果想要访问与服务器有关的数据和属性，可以使用res.end()
+
+#### 4.3.3 解决中文乱码问题
+
+![](img/解决文乱码问题.png)
+
+```js
+const http = require('http');
+const server = http.createServer();
+server.on('request', (req, res) => {
+  const str = '您的访问地址为 ' + req.url + ' 您的访问对象为 ' + req.method;
+  // const str = `您的访问地址为${req.url},您的访问对象为${req.method}`;
+  // res.end()将内容响应给客户端
+    //把响应头的文字编码设置为utf-8
+  res.setHeader('Content-Type', 'text/html; charset=utf-8');
+  res.end(str);
+  console.log(str);
+})
+server.listen(80, () => {
+  console.log('Server running at http://127.0.0.1:80');
+})
+```
+
+### 4.4 启动服务器
+
+调用服务器实例的 .listen()方法，即可启动当前的web服务器实例
+
+```js
+// 1.导入http模块
+const http = require('http');
+// 2.创建web服务器
+const server = http.createServer();
+// 3.为服务器绑定request事件，监听客户端的请求
+server.on('request', function(req, res) {
+  console.log('Some one visit our web server');
+})
+
+// 4.启动服务器
+server.listen(80, function() {
+  console.log('server running at http://127.0.0.1:80');
+})
+```
+
+## 5.根据不同的URL响应不同的html内容
+
+### 5.1 核心实现步骤
+
+![](img/根据不同的url相应不同的html.png)
+
+## 6.时钟案例--实现他的web服务器
+
+```js
+const http = require('http');
+const fs = require('fs');
+const path = require('path');
+// 创建web服务器
+const server = http.createServer();
+server.on('request', (req, res) => {
+  // 3.1 获取到客户端请求的url地址
+  const url = req.url;
+  //console.log(url);console.log('----------');
+  // 3.2 把请求的url地址映射为具体文件的存放路径
+  // const fpath = path.join(__dirname, url);
+  let fpath = '';
+  if(url === '/'){
+    fpath = path.join(__dirname, '/files/index.html')
+  } else {
+    fpath = path.join(__dirname, '/files', url);
+  }
+
+  // 4.1根据映射过来的文件路径读取文件内容
+  fs.readFile(fpath, 'utf-8', (err, dataStr) => {
+    if(err){
+      return res.end('404 Not found!');
+    }
+    res.end(dataStr);
+  })
+})
+
+// 启动web服务器
+server.listen(80, () => {
+  console.log('server listen at http://127.0.0.1:80');
+})
+```
+
+# 三、模块化
+
+## 1.定义
+
+模块化是指解决一个复杂问题，自顶向下把系统划分为若干个模块的过程，对于整个系统来说，
+
+模块是可组合，分解，更换的单元。
+
+## 2.编程模块化的好处
+
+![](img/模块化的好处.png)
+
+## 3.模块化规范
+
+对模块进行拆分和组合时，需要遵守的规则
+
+大家都遵守相同的模块化规范写代码，降低交流的成本，极大方便各个模块之间的相互调用
+
+## 4.模块的分类
+
+* 内置模块：fs模块， path模块， http模块
+* 自定义模块：用户自己创建的 .js 文件
+* 第三方模块：第三方开发的模块，使用前需要下载
+
+## 5.加载模块使用require（）
+
+注意自定义模块需要添加相对路径
+
+```js
+const m1 = require('./m1');
+console.log(m1);
+```
+
+## 6.Node.js 中的模块作用域
+
+### 6.1什么是模块作用域？
+
+![](img/模块作用域.png)
+
+### 6.2模块作用作用域好处
+
+防止全局变量污染问题
+
+## 7.module对象
+
+在每个自定义的  .js 模块中都有一个module对象，它里面存储了和当前模块有关的信息
+
+在自定义模块中可以使用module.exports 对象，就是将模块中的成员共享出去，供外界使用
+
+外界用 require（）方法导入自定义模块时，得到的就是 module. exports所指向的对象。
+
+## 8.Node.js中的模块化规范
+
+![](img/模块化规范.png)
+
+## 9.exports与module.exports的使用误区
+
+![](img/exports()使用误区.png)
+
+# 三.npm和包
+
+## 1.什么是包？
+
+第三方个人开发的.js文件就是包
+
+## 2.包的来源
+
+由第三方团队或者个人开发出来的，免费供所有人使用，开源且免费
+
+## 3.为什么需要包？
+
+包是基于内置模块封装出来的，提供更多好用的api，提高开发效率
+
+## 4.在哪里下载包？
+
+全球最大的包共享平台，npm,lnc 一家IT公司，https://www.npmjs.com/
+
+![](img/在哪里下载包.png)
+
+## 5.如何下载包？
+
+![](img/如何下载包.png)
+
+## 6.npm初体验
+
+### 6.1 格式化时间传统方法，自定义模块
+
+自定义格式化时间模块
+
+```js
+function dateFormat(dtStr) {
+  let dt = dtStr;
+
+  const y = dt.getFullYear();
+  const m = padZero(dt.getMonth() + 1);
+  const d = padZero(dt.getDate());
+  const num = dt.getDay();
+  const arr = ['天','一', '二', '三', '四', '五', '六'];
+  const w = arr[num];
+
+
+  const hh = padZero(dt.getHours());
+  const mm = padZero(dt.getMinutes());
+  const ss = padZero(dt.getSeconds());
+
+  return `${y}年${m}月${d}日  星期${w}  ${hh}:${mm}:${ss}`;
+
+  // 定义补零函数
+
+  function padZero(n) {
+    return n < 10 ? '0' + n : n;
+  }
+}
+
+module.exports = {
+  dateFormat
+}
+```
+
+使用自定义模块
+
+```js
+// 导入自定义格式化时间模块
+const  time = require('./14_dateFormat');
+
+// 调用方法
+const dt = new Date();
+console.log(dt);
+
+console.log(time.dateFormat(dt));
+
+```
+
+### 6.2 使用第三方包来格式化时间
+
+在终端中：npm i moment 安装第三方包moment
+
+可以去npm官方网站查看用法
+
+```js
+const moment = require('moment');
+//moment()表示当前时间
+dt = moment().format('LLL');
+console.log(dt); // January 17, 2022 11:56 PM  //晚安喽!
+
+const moment = require('moment');
+dt = moment("2014-05-21 18:00:23").format('LLL');
+console.log(dt); // May 21, 2014 6:00 PM
+//LLL表示格式
+```
+
+
+
+#### 6.2.1 初次装包后，多了哪些文件
+
+![](img/初次装包后产生的文件.jpg)
+
+#### 6.2.2 包的语义化版本规范
+
+![](img/包的语义化版本规范.jpg)
+
+### 6.3 包管理配置文件
+
+#### 6.3.1 npm init -y 会为项目配置package.json 文件
+
+![](img/快速创建package.json文件.png)
+
+#### 6.3.2 dependencies节点
+
+#### 6.3.3 安装包
+
+打开终端 ： npm install 或者 npm i
+
+npm 包管理工具会读取package.json 中的dependencies 节点，读取到记录的所有依赖包名称和版本之后，npm 包管理工具会把这些包一次性下载。
+
+#### 6.3.4 卸载安装包
+
+npm uninstall 具体的包名
+
+#### 6.3.5 devDenpendencies 节点
+
+![](img/devDependencies节点.png)
+
+## 7.解决下包速度慢的问题
+
+![淘宝npm镜像工具](img/淘宝npm镜像工具.png)
+
+![](img/切换npm下包镜像源.png)
+
+注意 淘宝下包镜像源已经改名了
+
+```powershell
+PS F:\前端\node.js> npm config get registry
+https://registry.npmjs.org/
+```
+
+### 7.1 nrm 
+
+为了更方便的切换下包的镜像源，可以安装nrm这个小工具，利用nrm提供的终端命令，可以快速查看和切换下包的镜像源
+
+```powershell
+#通过 npm 包管理工具，将nrm 安装为全局可用的工具
+npm i nrm -g
+#查看所有可用的镜像源
+nrm ls
+# 将下包的镜像源切换为 taobao 镜像
+nrm use taobao
+```
+
+```powershell
+PS F:\前端\node.js> nrm ls
+
+  npm ---------- https://registry.npmjs.org/
+  yarn --------- https://registry.yarnpkg.com/
+  tencent ------ https://mirrors.cloud.tencent.com/npm/
+  cnpm --------- https://r.cnpmjs.org/
+  taobao ------- https://registry.npmmirror.com/
+  npmMirror ---- https://skimdb.npmjs.com/registry/
+
+PS F:\前端\node.js> nrm use taobao
+
+   Registry has been set to: https://registry.npmmirror.com/
+```
+
+## 8.包的分类和管理结构
+
+使用 npm 包管理工具下载的包，共分为两大类， 分别是：
+
+### 8.1 项目包
+
+* 被安装到node_modules 目录的包，都是项目包
+
+  * 开发依赖包 ：被记录到devDependencies节点中的包，只在开发期间会用到
+
+    ```powershell
+    npm i 包名 -D #开发依赖包
+    ```
+
+  * 核心依赖包： 被记录到dependencies 节点中的包，在开发期间和项目上线都会用到
+
+    ```powershell
+    npm i 包名 #核心依赖包
+    ```
+
+### 8.2 全局包
+
+* 在执行 npm install  的时候，如果提供-g的参数，那么就会安装为全局包
+* 安装包会放到 C:\Users\asus\AppData\Roaming\npm\node_ modules 目录下
+
+```powershell
+npm i 包名 -g  #安装全局包
+npm uninstall 包名 -g #卸载全局包
+```
+
+只有工具性质的包才有必要全局安装
+
+判断某个包是否需要全局安装，可以参考官方提供的使用说明
+
+### 8.3规范的包结构
+
+![](img/规范的包结构.png)
+
+## 9.开发自己的包
+
+![](img/开发属于自己的包.png)
+
+### 9.1始化包的基本结构
+
+1. 新建 itheima-tools 文件夹 ，作为包的根目录
+2. 在 itheima-tools 文件夹中，新建三个文件
+   * package.json (包管理配置文件)
+   * index.js (包的入口文件)
+   * README.md ( 包的说明文件)
+
+### 9.2将不同功能进行模块化拆分
+
+### 9.3 编写包的文档说明
+
+描述包的用法，作用，注意事项等
+
+## 10. 发布包
+
+### 10.1在终端登录账号
+
+npm login 然后按照要求输入用户名，密码，邮箱等
+
+```powershell
+#注意：登录的地址必须是npm 的官方地址，也就是镜像源必须是npm官方地址
+PS F:\前端\node.js> npm login
+
+npm notice Log in on https://registry.npmjs.org/   
+Username: coder66y
+Password:
+Email: (this IS public) 2160360887@qq.com
+Enter one-time password from your authenticator app: 48954556
+Logged in as coder66y on https://registry.npmjs.org/.
+```
+
+### 10.2 发布包
+
+在包的根目录下，打开终端，输入 npm publish 即可，注意包名不可以一样，所以在发布之前看一下npm官网上有没有一样的包名
+
+### 10.3 删除包
+
+运行 npm unpublish 包名 --force , 即可从 npm 删除已经发布的包
+
+* 这个命令只能删除72小时内发布的包
+* 删除之后，24小时内不可以重复发布
+* 发布包要慎重，尽量不要发布没有意义的包
+
+## 11 模块的加载机制
+
+### 11.1内置模块加载机制
+
+模块在第一次加载后会被缓存，这也就说多次调用require（）不会导致模块的代码被执行多次，无论是内置模块还是用户自定义模块，第三方包他们都会邮箱从缓存中加载，从而提高模块的运行效率
+
+* 内置模块是由 node.js 提供的模块，所以加载优先级最高
+
+### 11.2 自定义模块的加载机制
+
+![](img/自定义模块加载机制.png)
+
+### 11.3 第三方模块的加载机制
+
+![](img/第三方模块加载机制.png)
+
